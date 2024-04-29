@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Javascript</title>
+</head>
+
+<body>
+    <h1>Exercícios de Javascript</h1>
+    <label for="entrada"></label>
+    <input type="number" name="numero1" id="numero1">
+    <label for="numero2"></label>
+    <input type="number" name="numero2" id="numero2">
+    <p id="resultado"></p>
+    <button onclick="action()">Clique aqui para executar a função</button>
+
+    <script>
+        function action() {
+            // Exercício 1: Escreva um programa que recebe dois números como entrada e imprime o maior deles.
+            n1 = parseFloat(document.getElementById('numero1').value) //Falta algo!
+            n2 = parseFloat(document.getElementById('numero2').value)
+            let resultado = ''
+            if (n1 > n2) {
+                resultado = n1
+                console.log(resultado)
+            } else {
+                resultado = n2
+                console.log(resultado)
+            }
+            document.getElementById('resultado').innerText = `O maior dos valores é ${resultado}`   // Altera o elemento HTML com id correspondente adicionando o texto
+        }
+    </script>
+</body>
+
+</html>

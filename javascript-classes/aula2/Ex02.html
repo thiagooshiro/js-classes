@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Javascript</title>
+</head>
+
+<body>
+    <h1>Exercícios de Javascript</h1>
+    <label for="entrada"></label>
+    <input type="number" name="entrada" id="entrada">
+    <p id="resultado"></p>
+    <button onclick="action()">Clique aqui para executar a função</button>
+
+    <script>
+
+        function action() {
+            //Exercício 2: Crie um programa que verifica se um número dado é par ou ímpar e imprime uma mensagem, "o numero {n1} é par" se for par ou "O número {n1} é impar" se for impar
+            let n1 = parseInt(document.getElementById('entrada').value)      // Captura o valor do input quando o botão é clicado
+            resultado = ""
+            if (n1 % 2 === 0) {
+                resultado = "par"
+            } else {
+                resultado = "ímpar"
+            }
+            document.getElementById('resultado').innerHTML = `O valor ${n1} é ${resultado}`   // Altera o elemento HTML com id correspondente adicionando o texto
+        }
+
+        
+    </script>
+</body>
+
+</html>

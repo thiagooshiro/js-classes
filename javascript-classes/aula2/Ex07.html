@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Javascript</title>
+</head>
+
+<body>
+    <h1>Exercícios de Javascript</h1>
+    <label for="entrada1"></label>
+    <input type="number" name="entrada1" id="entrada1">
+    <label for="entrada2"></label>
+    <input type="number" name="entrada2" id="entrada2">
+    <label for="entrada3"></label>
+    <input type="number" name="entrada3" id="entrada3">
+    <p id="resultado"></p>
+    <button onclick="action()">Clique aqui para executar a função</button>
+
+    <script>
+        function action() {
+            // Exercício 7: Escreva um programa que recebe três números como entrada e imprime o maior dos três.
+            let n1 = parseInt(document.getElementById('entrada1').value)      // Captura o valor do input quando o botão é clicado
+            let n2 = parseInt(document.getElementById('entrada2').value)      
+            let n3 = parseInt(document.getElementById('entrada3').value)
+
+            maior = n1
+
+            if (n2 >= maior ) {
+              maior = n2
+            }  
+            if (n3 >= maior){
+                maior = n3
+            }
+
+            msg = `o maior dos valores é ${maior}`
+
+            document.getElementById('resultado').innerHTML = msg   // Altera o elemento HTML com id correspondente adicionando o texto
+        }
+
+        
+    </script>
+</body>
+
+</html>
