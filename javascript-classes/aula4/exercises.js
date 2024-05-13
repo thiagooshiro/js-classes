@@ -8,15 +8,13 @@
 // Ex: Se o valor alvo é 10, o programa deve imprimir: 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10;
 
 
-// 2 - Crie um algoritmo que lê uma lista de palavras e inverte as palavras, sem alterar a ordem da lista original. 
-// Ex: lista = ['Mariana', 'Luiz', 'João', 'Amanda']
-// output esperado: ['Anairam', 'Ziul', 'Oãoj', 'Adnama']
 
 
-// 3 - Crie um algoritmo que lê uma palavra e imprime as letras separadamente e cada letra em caixa alta (maíscula)
+
+// 2 - Crie um algoritmo que lê uma palavra e imprime as letras separadamente e cada letra em caixa alta (maíscula)
 
 
-// 4 -  Crie um algoritmo que exibe a tabuada de um determinado número:
+// 3 -  Crie um algoritmo que exibe a tabuada de um determinado número:
 // Ex - Se o valor escolhido for 3 a saída do terminal deverá ser algo mais ou menos assim:
 // 3 x 1 = 3
 // 3 x 2 = 6
@@ -30,7 +28,7 @@
 // 3 x 10 = 30
 
 
-// 5 - Observe as seguintes listas: 
+// 4 - Observe as seguintes listas: 
 let nomes = ['Bruna', 'Gabriel', 'Marcos', 'Jéssica', 'Fernando']
 let sobrenomes = ['Oliveira', 'Santos', 'Marques', 'Castro', 'Silva']
 
@@ -39,13 +37,16 @@ let sobrenomes = ['Oliveira', 'Santos', 'Marques', 'Castro', 'Silva']
 
 
 
-// 6 - Observe as seguintes listas:
+// 5 - Observe as seguintes listas:
 const clientes = ["João", "Daniel", "Larissa", "Mariana", "Julia", "Luana", "Gustavo", "Luiz"]
 const produtos = ["molho de tomate", "cenoura", "macarrão", "salame", "lâmpada", "água sanitária", "refrigerante", "suco"]
 // Essas duas listas mostram quem comprou um determinado produto, por exemlpo, "João" comprou "molho de tomate" e assim por  diante.
 // Crie um algoritmo que imprima a seguinte mensagem para cada cliente:
 // "O cliente {nome do cliente} comprou {produto}"
 
+// 6 - Crie um algoritmo que lê uma lista de palavras e inverte as palavras, sem alterar a ordem da lista original. 
+// Ex: lista = ['Mariana', 'Luiz', 'João', 'Amanda']
+// output esperado: ['Anairam', 'Ziul', 'Oãoj', 'Adnama']
 
 // 7 - Desafio - Jogo de Pedra Papel Tesoura:
 // O usuário deve poder escolher entre 3 opções: "pedra", "papel" ou "tesoura"
