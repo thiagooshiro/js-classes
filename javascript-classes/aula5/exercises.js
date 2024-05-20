@@ -23,13 +23,13 @@
 
 //Crie uma cópia do documento base: Ex00.html e nomeie essa cópia de Ex07.html
 
-// 1 - Crie um algoritmo que lê a seguinte lista de nomes e posiciona esses nomes num elemento li em um documento HTML
+// 7.1 - Crie um algoritmo que lê a seguinte lista de nomes e posiciona esses nomes num elemento li em um documento HTML
 let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
 
 
-// 1.2 - Crie uma função que filtre os nomes dessa lista a partir de caracteres digitados em um input.
+// 7.2 - Crie uma função que filtre os nomes dessa lista a partir de caracteres digitados em um input.
 
+// 7.3 - Crie um botão que ao ser clicado remove o último item da lista de nome
 
-// 1.3 - Crie uma função que altera um valor da lista para o valor escrito em um input.
+// 7.4 - Crie uma função que altera um valor da lista para o valor escrito em um input
 
-// 1.4 - Crie um botão que ao ser clicado remove o último item da lista de nome
