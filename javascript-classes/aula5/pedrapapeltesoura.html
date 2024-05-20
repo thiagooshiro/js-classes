@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Pedra Papel Tesoura</title>
+</head>
+
+<body>
+    <h1>Jogo: Pedra Papel Tesoura</h1>
+    <h2>Escolha sua opção:</h2>
+    <div>
+        <input type="radio" name="radio1" id="pedra" value="pedra" onchange="choice('pedra')">
+        <label for="pedra">Pedra</label>
+
+        <input type="radio" name="radio1" id="papel" value="papel" onchange="choice('papel')">
+        <label for="papel">Papel</label>
+
+        <input type="radio" name="radio1" id="tesoura" value="tesoura" onchange="choice('tesoura')">
+        <label for="tesoura">Tesoura</label>
+
+    </div>
+    <div>
+        <p id="maquina"></p>
+        <p id="jogador"></p>
+        <p id="resultado"></p>
+    </div>
+    <button id="game" style="margin-top: 20px;" onclick="playGame()">Jogar!</button>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
