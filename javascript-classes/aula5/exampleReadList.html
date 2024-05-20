@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lendo itens da lista com DOM</h1>
+    <p>Lista de Compras</p>
+    <ul class="lista-produtos">
+        <li class="item">Leite</li>
+        <li class="item">Arroz</li>
+        <li class="item">Óleo de cozinha</li>
+        <li class="item">Sabonete</li>
+        <li class="item">Shampoo</li>
+        <li class="item">Desodorante</li>
+        <li class="item">Sabão em pó</li>
+        <li class="item">Amaciante</li>
+    </ul>
+
+    <button onclick=turnIntoBananas()>Não clique!</button>
+
+    <script>
+        list = document.getElementsByClassName('item')
+        function readList() {
+            console.log(list)
+        }
+
+        function turnIntoBananas() {
+            for (let item of list) {
+                item.innerText = ' Bananas'
+            }
+        }
+
+
+
+        readList()
+
+    </script>
+</body>
+
+</html>

@@ -12,7 +12,6 @@ let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Ha
 //     let nome = names[i]
 //     // console.log(nome[0])
 //     if (nome[0] === 'C') {
-//         console.log('nomes[i]:', names[i])
 //         console.log('nome:', nome)
 //         }
 
@@ -25,5 +24,8 @@ names.pop()
 
 console.log(names)
 
-names.splice()
+names.splice(1, 1, 'Pedro', 'Maria')
+
+
+console.log(names)
 
