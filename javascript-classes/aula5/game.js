@@ -51,9 +51,11 @@ function playGame() {
     resultParagraph.innerText = result
 
     gamesCounter += 1
+    console.log(machineWins)
+    console.log(playerWins)
 
     if (gamesCounter >= 1) {
-        button_game.innerText = "Jogar Novamente"
+        button_game.innerText = "Jogar Novamente!"
     }
 
     
