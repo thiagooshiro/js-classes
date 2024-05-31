@@ -18,4 +18,4 @@ let menorLista = [0, 16, -22, 42, 55, 23, 12]
 let maiorLista = [12, -33, 0, 2, 12, 21, 42]
 
 
-// 7 - Crie um programa que recebe um email
+// 7 - Crie um programa que recebe um número e realiza o somatório de todos os números até aquele valor, e imprime o valor total da soma. Ex: o somatório de 6 é 1 + 2 + 3 + 4 + 5 + 6 = 21
