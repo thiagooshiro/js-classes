@@ -10,14 +10,14 @@
 <body>
     <h1>Exercícios de Javascript</h1>
     <label for="entrada">Digite a sua idade:</label>
-    <input type="text" name="entrada" id="entrada">
+    <input type="number" name="entrada" id="entrada">
     <p id="resultado"></p>
     <button onclick="action()">Clique aqui para executar a função</button>
 
     <script>
         function action() {
             // Exercício 3: Escreva um programa que solicita a idade do usuário e determina se ele é elegível para votar (18 anos ou mais).
-            let idade = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
+            let idade = Number(document.getElementById('entrada').value)      // Captura o valor do input quando o botão é clicado
             let msg = ''
             if (idade >= 18) {
                 msg = 'Parabéns! Você está elegível para votar! =)'
