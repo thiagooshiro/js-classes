@@ -16,16 +16,18 @@
 
     <script>
         function action() {
-            //Exercício 6: Crie um programa que determina se um ano dado é bissexto. Um ano bissexto é divisível por 4, mas não é divisível por 100, a menos que também seja divisível por 400.
-            let ano = parseInt(document.getElementById('entrada').value)      // Captura o valor do input quando o botão é clicado
+        // Exercício 4: Crie um programa que recebe uma string como entrada e verifica se ela começa com a letra 'A'. Imprima "Começa com A" se for verdadeiro, caso contrário, imprima "Não começa com A".
+
+            let palavra = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
             let msg = ''
-            if (ano % 400 === 0 || ano % 4 === 0 && ano % 100 != 0){
-                msg = 'Esse ano é bissexto'
+
+            if (palavra[0].toLowerCase() === 'a') {
+                msg = 'A palavra se inicia em a'
             } else {
-                msg = 'Esse ano não é bissexto'
+                msg = 'Não inicia em a'
             }
-            
-            document.getElementById('resultado').innerHTML = msg   // Altera o elemento HTML com id correspondente adicionando o texto
+
+            document.getElementById('resultado').innerText = msg   // Altera o elemento HTML com id correspondente adicionando o texto
         }
 
         
