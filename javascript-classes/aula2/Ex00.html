@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Javascript</title>
+</head>
+
+<body>
+    <h1>Exercícios de Javascript</h1>
+    <label for="entrada">Digite seu nome:</label>
+    <input type="text" name="entrada" id="entrada">
+    <p id="resultado"></p>
+    <button onclick="action()">Clique aqui para executar a função</button>
+
+    <script>
+        function action() {
+            // Exercício 0 - Peça ao usuário para digitar o nome no input, se esse valor for válido, esse valor deve ser impresso no paragrafo de id "resultado", caso contrário,exibir uma mensagem de erro.
+            let msg = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
+            let paragraph = document.getElementById('resultado')
+            console.log(paragraph)
+            if (!msg) {
+                alert('Cê esqueceu de digitar seu nome, trem')
+            } else { 
+                console.log(msg)
+                paragraph.innerText = msg   // Altera o elemento HTML com id correspondente adicionando o texto     
+            }
+        }
+
+        
+    </script>
+</body>
+
+</html>
