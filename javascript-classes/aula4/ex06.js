@@ -1,10 +1,21 @@
-// 6 - Observe as seguintes listas:
-const clientes = ["João", "Daniel", "Larissa", "Mariana", "Julia", "Luana", "Gustavo", "Luiz"]
-const produtos = ["molho de tomate", "cenoura", "macarrão", "salame", "lâmpada", "água sanitária", "refrigerante", "suco"]
-// Essas duas listas mostram quem comprou um determinado produto, por exemlpo, "João" comprou "molho de tomate" e assim por  diante.
-// Crie um algoritmo que imprima a seguinte mensagem para cada cliente:
-// "O cliente {nome do cliente} comprou {produto}"
+// 6 - Crie um programa que realiza um filtro na lista abaixo, verificando se a palavra inicia ou termina com o carácter escolhido.
+let produtosDoMercado = [
+  "aveia",
+  "maçã",
+  "uva",
+  "abobora",
+  "leite",
+  "pão",
+  "sabonete",
+  "desodorante",
+  "amaciante",
+  "chuveiro",
+];
 
-for (let i = 0; i < clientes.length; i++) {
-    console.log(`O cliente ${clientes[i]} comprou ${produtos[i]}`)
+let caracter = 'a'
+
+for (item of produtosDoMercado){
+    if(item[0] === caracter || item[item.length - 1] === caracter) { 
+        console.log(item)
+    }
 }

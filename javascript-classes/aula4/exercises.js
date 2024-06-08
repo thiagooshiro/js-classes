@@ -4,14 +4,14 @@
 // Lembre-se de criar um arquivo em separado para cada um dos exercícios para melhor organizar seu código.
 
 
-// 1 - Crie um algoritmo que imprima todos os números de 1até um valor alvo.
+// 1 - Crie um algoritmo que imprima todos os números de até um valor alvo.
 // Ex: Se o valor alvo é 10, o programa deve imprimir: 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10;
 
 
 
 
 
-// 2 - Crie um algoritmo que lê uma palavra e imprime as letras separadamente e cada letra em caixa alta (maíscula)
+// 2 - Crie um algoritmo que lê uma palavra e imprime as letras separadamente e cada letra em caixa alta (maiúscula)
 
 
 // 3 -  Crie um algoritmo que exibe a tabuada de um determinado número:
@@ -44,11 +44,15 @@ const produtos = ["molho de tomate", "cenoura", "macarrão", "salame", "lâmpada
 // Crie um algoritmo que imprima a seguinte mensagem para cada cliente:
 // "O cliente {nome do cliente} comprou {produto}"
 
-// 6 - Crie um algoritmo que lê uma lista de palavras e inverte as palavras, sem alterar a ordem da lista original. 
+
+// 6 - Crie um programa que realiza um filtro na lista abaixo, verificando se a palavra inicia ou termina com o carácter escolhido.
+let produtosDoMercado = ["aveia", "maçã", "uva", "abobora", "leite", "pão", "sabonete", "desodorante", "amaciante", "chuveiro"]
+
+// 7 - Crie um algoritmo que lê uma lista de palavras e inverte as palavras, sem alterar a ordem da lista original. 
 // Ex: lista = ['Mariana', 'Luiz', 'João', 'Amanda']
 // output esperado: ['Anairam', 'Ziul', 'Oãoj', 'Adnama']
 
-// 7 - Desafio - Jogo de Pedra Papel Tesoura:
+// 8 - Desafio - Jogo de Pedra Papel Tesoura:
 // O usuário deve poder escolher entre 3 opções: "pedra", "papel" ou "tesoura"
 // A máquina deve escolher aleatoriamente entre as opções "pedra", "papel" ou "tesoura"
 // O algoritmo deve fazer a comparação para descobrir quem foi o vencedor da partida.

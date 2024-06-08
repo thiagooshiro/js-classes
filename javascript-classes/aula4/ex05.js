@@ -1,10 +1,28 @@
-// 5 - Observe as seguintes listas: 
-let nomes = ['Bruna', 'Gabriel', 'Marcos', 'Jéssica', 'Fernando']
-let sobrenomes = ['Oliveira', 'Santos', 'Marques', 'Castro', 'Silva']
+// 5 - Observe as seguintes listas:
+const clientes = [
+  "João",
+  "Daniel",
+  "Larissa",
+  "Mariana",
+  "Julia",
+  "Luana",
+  "Gustavo",
+  "Luiz",
+];
+const produtos = [
+  "molho de tomate",
+  "cenoura",
+  "macarrão",
+  "salame",
+  "lâmpada",
+  "água sanitária",
+  "refrigerante",
+  "suco",
+];
+// Essas duas listas mostram quem comprou um determinado produto, por exemlpo, "João" comprou "molho de tomate" e assim por  diante.
+// Crie um algoritmo que imprima a seguinte mensagem para cada cliente:
+// "O cliente {nome do cliente} comprou {produto}"
 
-//Crie um algirtmo que combine o valor do nome com o sobrenome formando o nome completo.
-// O programa deve iterar sobre as listas fornecidas e juntar os valores correspondentes.
-
-for (i = 0; i < nomes.length; i+= 1) {
-    console.log(nomes[i], sobrenomes[i])
+for (let i = 0; i < clientes.length; i+= 1){ 
+    console.log(`O cliente ${clientes[i]} comprou ${produtos[i]}`)
 }

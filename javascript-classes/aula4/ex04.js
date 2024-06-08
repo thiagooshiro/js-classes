@@ -1,20 +1,12 @@
-// 4 -  Crie um algoritmo que exibe a tabuada de um determinado número:
-// Ex - Se o valor escolhido for 3 a saída do terminal deverá ser algo mais ou menos assim:
-// 3 x 1 = 3
-// 3 x 2 = 6
-// 3 x 3 = 9
-// 3 x 4 = 12
-// 3 x 5 = 15
-// 3 x 6 = 18
-// 3 x 7 = 21 
-// 3 x 8 = 24
-// 3 x 9 = 27
-// 3 x 10 = 30
+// 4 - Observe as seguintes listas:
+//Crie um algirtmo que combine o valor do nome com o sobrenome formando o nome completo.
+// O programa deve iterar sobre as listas fornecidas e juntar os valores correspondentes.
 
-numero = 3
+let nomes = ["Bruna", "Gabriel", "Marcos", "Jéssica", "Fernando", "Mariana"];
+let sobrenomes = ["Oliveira", "Santos", "Marques", "Castro", "Silva"];
 
-for (let i = 1; i <= 10; i+=1){
-    result = numero * i
-    console.log(`${numero} x ${i} = ${result}`)
-    
+for (let i = 0; i < nomes.length; i+= 1) {
+    if(nomes[i] && sobrenomes[i]){
+    console.log(nomes[i], sobrenomes[i])
+    }
 }
