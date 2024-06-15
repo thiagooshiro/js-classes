@@ -11,9 +11,18 @@
     <button onclick="changeColor('red')">Vermelho</button>
     <button onclick="changeColor('green')">Verde</button>
     <button onclick="changeColor('blue')">Azul</button>
+    <button id="reset">Resetar</button>
 
     <script>
-        // Ex-2 implemente a função "changeColor", de forma que quando  botão é clicado o fundo da tela muda para a cor indicada no botão
+        // Ex-2 implemente a função "changeColor", de forma que quando  botão é clicado o fundo da tela muda para a cor indicada no botã
+        
+    function changeColor(cor) {
+        document.body.style.backgroundColor = cor
+    } 
+    
+    document.getElementById('reset').addEventListener('mouseover', function(){
+        document.body.style.backgroundColor = 'white'
+    })
     </script>
 </body>
 
