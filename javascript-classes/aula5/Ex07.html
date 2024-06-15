@@ -11,19 +11,18 @@
     <h1>Criando elementos e posiconando elementos HTML com DOM</h1>
     <p>Lista de amigos</p>
     <ul id="resultado"></ul>
-    <button onclick="action()">Clique em mim para ver a lista</button>
+    <button onclick="action()">Clique aqui!</button>
 
     <script>
+        let listaHTML = document.getElementById('resultado')
+        // A lista de amigos vai inicar com um valor criado por nós:
+        let primeiraLi = document.createElement('li')
+        primeiraLi.innerText = 'Thiago'
+        listaHTML.append(primeiraLi)
         function action() {
-
-            listaHTML = document.getElementById('resultado')
             let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
+            
 
-            for (name of names) {
-                novaLi = document.createElement("li")
-                novaLi.innerText = name
-                listaHTML.append(novaLi)
-            }
         }
 
     </script>

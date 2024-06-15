@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div>
+        <button id="prev">Previous</button>
+        <img id="gallery" src="image1.jpg" alt="Image 1">
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+        let currentIndex = 0;
+
+        function updateImage() {
+            document.getElementById('gallery').src = images[currentIndex];
+            document.getElementById('gallery').alt = `Imagem ${currentIndex + 1}`
+        }
+
+        document.getElementById('next').addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        });
+
+        document.getElementById('prev').addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage();
+        });
+    </script>
+</body>
+
+</html>

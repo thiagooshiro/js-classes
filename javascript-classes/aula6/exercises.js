@@ -6,12 +6,12 @@
 // 13  - Crie uma função que receba como parametro uma lista de palavras e uma letra e filtra a lista a partir dessa letra.
 
 
-// 14 - Crie um programa que conta quantas vogais possui cada palavra de uma lista de palavras.
+// 14 - Crie um programa que conta quantas vogais possui uma palavra
 
 
 // 15 - Crie uma função que realiza a soma entre dois valores recebidos como parâmetros.
 
-// 16 - Crie uma função que realiza a soma entre dois valores recebidos como parâmetros.
+// 16 - Crie uma função que realiza a subtração entre dois valores recebidos como parâmetros.
 
 // 17 - Crie um programa que realiza a multiplicação entre dois valores recebeidos como parâmetros.
 

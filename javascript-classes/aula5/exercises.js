@@ -23,7 +23,7 @@
 
 //Crie uma cópia do documento base: Ex00.html e nomeie essa cópia de Ex07.html
 
-// 7.1 - Crie um algoritmo que lê a seguinte lista de nomes e posiciona esses nomes num elemento li em um documento HTML
+// 7.1 - Crie um algoritmo que lê a seguinte lista de nomes e posiciona esses nomes num elemento li dentro da ul em um documento HTML
 let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
 
 
