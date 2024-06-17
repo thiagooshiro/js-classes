@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName</title>
+</head>
+
+<body>
+    <h1>Exemplo getElementsByTagName</h1>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Terceiro parágrafo</p>
+
+    <button id="magia">Veja a magia acontecer</button>
+
+    <script>
+        // O seletor "getElementsByTagName" captura todos os elementos da tag específica que passamos como parâmetro.
+        // Nesse exemplo, a tag buscada é "p" (parágrafo). Todas as tags "p" do HTML serão capturadas na variável "paragrafos" na forma de uma lista (HTMLCollection).
+        let paragrafos = document.getElementsByTagName('p');
+
+        let buttonMagic = document.getElementById('magia');
+
+        // Esta função cria uma cor aleatória em hexadecimal.
+        function getRandomColor() {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // A função "doMagic" executa um laço de repetição "for" que percorre a lista de parágrafos capturados e altera o valor textual (innerText) de cada parágrafo.
+        //A propriedade "color" e a propriedade "backgroundColor" também são alteradas, utilizando a função "getRandomColor" para alterar as cores dessas propriedades de forma randômica.
+
+        function doMagic() {
+            for (let p of paragrafos) {
+                p.innerText = 'Você fez magia!';
+                p.style.color = getRandomColor();
+                p.style.backgroundColor = getRandomColor();
+            }
+        }
+
+        buttonMagic.addEventListener('click', doMagic);
+
+    </script>
+</body>
+
+</html>

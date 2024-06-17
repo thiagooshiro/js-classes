@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector & querySelectorAll</title>
+</head>
+
+<body>
+    <h1>Exemplo querySelector e querySelectorAll</h1>
+    <p>Algum texto</p>
+    <p>Algum texto</p>
+    <p>Algum texto</p>
+    <p>Algum texto</p>
+
+
+    <span>Primeiro span! Será capturado</span>
+    <p>Outro texto</p>
+    <span>Segundo span... não será capturado</span>
+
+    <h2 class="olha-aqui">Olha aqui!</h2>
+    <h3 class="olha-aqui">Olha aqui!</h3>
+    <h4 class="olha-aqui">Olha aqui!</h4>
+    <div class="olha-aqui">Não tem nada aqui</div>
+
+    <button id="btn-exemplo">Clique, por gentileza</button>
+
+    <script>
+        //No exemplo a seguir veremos dois seletores que funcionam como coringas do DOM. Coringas porque conseguem capturar um elemento pelo nome da tag, classe ou id.
+
+        //querySelector seleciona o primeiro elemento seja de uma classe, id, ou tag (normalmente é utilizado para pegar apenas um valor específico)
+
+        //querySelectorAll pega todos os elementos que partilham uma propriedade, não funciona para ids, afinal espera-se que ids sejam únicos.
+
+        //Quando utilizamos o querySelector ou Quer, podemos apenas passar uma string com qual tag desejamos capturar.
+        let primeiroSpan = document.querySelector('span') // Captura o primeiro span no HTML
+        let paragrafos = document.querySelectorAll('p')  // Captura todos os elementos da tag "p" (parágrafo) do documento HTML.
+
+        //Se desejamos capturar um id utilziandp querySelector preciamos colocar # antes do id, da seguinte forma: 
+        let btnCapture = document.querySelector('#btn-exemplo') //Nesse caso, capturamos o botão de id "btn-exemplo"
+
+
+        //Se desejamos capturar elementos de uma classe devemos utilizar . (ponto) antes da classe, conforme o exemplo:
+
+        let olhaAqui = document.querySelectorAll('.olha-aqui') // Todos os elementos da classe "olha-aqui" serão capturados, mesmo que sejam tags diferentes, como é o caso.
+
+        function captureAll() {
+            primeiroSpan.innerText = 'Primeiro span foi capturado!'
+
+            for (let p of paragrafos) {
+                p.innerText = "Fomos capturados!"
+            }
+
+            for (let elemento of olhaAqui) {
+                elemento.innerHTML = 'NÃO OLHA AQUI, FOMOS CAPTURADOS!'
+                elemento.style.backgroundColor = 'darkcyan'
+            }
+
+            btnCapture.innerText = 'DOM me tornou um sequestrador'
+        }
+
+        btnCapture.addEventListener('click', captureAll)
+
+
+    </script>
+
+</body>
+
+</html>

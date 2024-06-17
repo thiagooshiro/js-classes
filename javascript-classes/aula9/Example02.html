@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+</head>
+
+<body>
+    <h1>Exemplo getElementsByClassName</h1>
+    <p class="item">Algum texto</p>
+    <p class="item">Algum texto</p>
+    <p class="item">Algum texto</p>
+    <p class="item">Algum texto</p>
+    <p>Esse aqui não vai alterar!</p>
+    <button id="faz-algo">Faz um trem</button>
+    <script>
+        // Ao utilizarmos o DOM, praticamente a sintaxe sempre será: "document.seletorEscolhido('atributo do seletor')"
+        // O atributo do seletor seria "o que esse seletor quer selecionar". No exemplo anterior, vimos o seletor "getElementById", e o atributo esperado então é o "id" que se deseja capturar.
+
+        // No exemplo a seguir veremos um seletor que captura um conjunto de elementos. Todos os seletores que capturam conjuntos estão no plural "elements" ao invés de "element" na sintaxe do seletor.
+
+        // O seletor "getElementsByClassName" captura TODOS OS ELEMENTOS que compartilham uma classe, mesmo que sejam elementos HTML diferentes. Nesse caso, estamos capturando todos os elementos da classe "item".
+
+        // Dessa forma, nossa variável items não é apenas um elemento HTML capturado, mas uma lista de elementos capturados, sobre a qual podemos fazer alterações através de um laço de repetição ou alterar via indexação.
+
+        let items = document.getElementsByClassName('item');
+
+        let button = document.getElementById('faz-algo');
+
+        function action() {
+            for (let i = 0; i < items.length; i += 1) {
+                items[i].innerText = `Esse é o elemento de índice ${i} da lista items`;
+            }
+        }
+
+        button.addEventListener('click', action);
+        // Diferente do primeiro exemplo, aqui declaramos a função fora do escutador de eventos e "passamos" essa função como parâmetro. Atenção: nesse caso, é importante NÃO COLOCAR os parênteses na frente de action, somente informar qual função queremos que o addEventListener execute.
+
+        // Nesse exemplo, a função action executará um laço de repetição "for", percorrendo a lista items e alterando o valor textual (innerText) de cada elemento da classe "item".
+    </script>
+</body>
+
+</html>
