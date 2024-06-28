@@ -1,0 +1,1 @@
+// 7 - Crie uma função que recebe como parâmetro uma string e imprime individualmente cada um de seus caracteres.

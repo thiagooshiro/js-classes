@@ -1,13 +1,23 @@
+//O conceito:
+
+//Funções são blocos de código que podem ser executado de forma modular.
+//Elas auxiliam a não repetirmos código e funcionam como caixa de ferramentas para problemas que às vezes encontramos de forma recorrente no código. Ex: Carrinho de compras
+
+
+//Nesses primeiros exercícios nem conversaremos sobre funções, o objetivo deles é "entender a dor" primeiro.
+
+
 // Exercícios:
 
-// CADA EXERCÍCIO DEVE ESTAR EM UM ARQUIVO JAVASCRIPT SEPARADO
+
+// Para melhor organização recomenda-se criarem arquivos separados para cada exercícios;
 // A nomeação padrão dos arquivos é: "Ex01" para o primeiro e assim por diante;
 
-// 1 - Crie um programa que calcula o somatório do número 6
+// 1 - Crie um programa que exibe a mensagem "Olá, Bruno!"
 
-// 2 - Crie um programa que calcula o somatório do número 10
+// 2 - Crie um programa que exiba a mensagem "Olá, Amanda!"
 
-// 3 - Crie um programa que calcula o somatório do número 12
+// 3 - Crie um programa que exiba a mesma mensagem porém com o seu nome.
 
 
 const produtos = [
@@ -23,18 +33,7 @@ const produtos = [
     "Chocolate"
 ];
 
-// 4 - Crie um programa que filtra uma lista de produtos e conta quantas palavras possuem a letra "a"
+// 4 - Crie um programa que filtra a lista produtos pela letra "a"
 
-// 5 - Crie um programa que filtra uma lista de produtos e conta quantas palavras possuem a letra "e"
-
-// 6 - Crie um programa que filtra uma lista de produtos e conta quantas palavras possuem a letra "o"
-
-
-// 7 - Crie um programa que calcula a soma entre dois valores.
-
-// 8 - Crie um programa que calcula a subtração entre dois valores
-
-// 9 - Crie um programa que calcula a multiplicação entre dois valores
-
-// 10 - Crie um programa que calcula a divisão entre dois valores
+// 5 - Crie um programa que filtra a lista produtos pela letra "e"
 

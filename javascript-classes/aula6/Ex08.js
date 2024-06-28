@@ -1,3 +1,5 @@
+// 8  - Crie uma função que receba como parametro uma lista de palavras e uma letra e filtra a lista a partir dessa letra.
+
 const produtos = [
     "Café",
     "Arroz",
@@ -10,15 +12,3 @@ const produtos = [
     "Macarrão",
     "Chocolate"
 ];
-
-
-
-console.log('For of')
-for (let produto of produtos) {
- console.log(produto)   
-}
-
-console.log('For in')
-for (let indice in produtos) {
-    console.log(indice)
-}

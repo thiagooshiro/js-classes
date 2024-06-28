@@ -13,4 +13,4 @@ const nomeProfissao = function (parametro1, parametro2) {
     return `Dados informados: ${parametro1}, ${parametro2}`
 }
 
-console.log(infos('Thiago', 'professor'))
+console.log(nomeProfissao('Thiago', 'professor'))
