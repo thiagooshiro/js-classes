@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Parent and Child Elements</title>
+    <link rel="stylesheet" href="examples.css">
+</head>
+
+<body>
+    <div id="pai">
+        <p id="primeiro">Primeiro filho</p>
+        <p id="segundo">Primeiro filho</p>
+        <p id="terceiro">Primeiro filho</p>
+        <p id="quarto">Primeiro filho</p>
+        <p id="quinto">Primeiro filho</p>
+    </div>
+    <div id="tio">
+        <p>Primo</p>
+    </div>
+    <button id="btn-log">Logar Filhos</button>
+
+    <script>
+        // No DOM, a estrutura de elementos se organiza de forma hierárquica.
+        // Nesse exemplo, temos uma div com id "pai" que possui 5 elementos filhos, que são parágrafos (p).
+        // Essa estrutura do DOM nos permite acessar elementos específicos "mapeando" através dessa "árvore genealógica" do DOM.
+        // Todo HTML é considerado dentro dessa estrutura, logo a div "pai" é filha do "body" da página.
+
+        // Neste exemplo, todos os parágrafos se consideram "o primeiro filho". Nossa função irá corrigir para indicar qual filho aquele parágrafo realmente é da div de id "pai".
+
+        let divPai = document.getElementById('pai');
+        let btnShow = document.getElementById('btn-log');
+
+        // Neste exemplo, capturamos a div com id "pai" e vamos acessar a propriedade children para verificar quem são os filhos desse elemento.
+
+        function showChildren() {
+            let filhosDaDiv = divPai.children;
+
+            console.log(filhosDaDiv);
+            // O atributo children é uma HTMLCollection, ou seja, uma coleção de elementos HTML.
+            // Dessa forma, podemos realizar um laço de repetição nessa lista para alterar os valores dos parágrafos para informar qual filho realmente são da div de id "pai":
+
+            for (let i = 0; i < filhosDaDiv.length; i += 1) {
+                filhosDaDiv[i].innerText = `Esse é o ${i + 1}° filho`;
+            }
+        }
+
+        btnShow.addEventListener('click', showChildren);
+    </script>
+</body>
+
+</html>

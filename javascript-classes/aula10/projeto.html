@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .div-task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+        }
+
+        .div-task:hover {
+            background-color: #f9f9f9;
+        }
+
+        .div-task li {
+            flex-grow: 1;
+        }
+
+        .btn-remove {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Lista de Tarefas</h1>
+        <label for="input-add">Adicionar Tarefa</label>
+        <input type="text" name="input-add" id="input-add" placeholder="Digite aqui a tarefa que deseja adicionar" />
+        <button id="btn-add">Adicionar Tarefa!</button>
+        <ul id="todo-list"></ul>
+    </main>
+    <script>
+        let todoList = document.getElementById('todo-list')
+        let btnAdd = document.getElementById('btn-add')
+        let inputAdd = document.getElementById('input-add')
+
+
+        function checkTask(event) {
+            let listItem = event.target.parentElement.firstElementChild
+            let checkbox = event.target.parentElement.children[1]
+
+            if (listItem.style.textDecorationLine != 'line-through') {
+                listItem.style = 'text-decoration:line-through';
+                checkbox.checked = true
+            }
+            else {
+                listItem.style = 'text-decoration: '
+                checkbox.checked = false
+            }
+        }
+
+        function removeTask(event) {
+            let divElement = event.target.parentElement
+            divElement.remove()
+        }
+
+        function addTask() {
+            if (inputAdd.value) {
+                let taskDiv = document.createElement('div')
+                let taskLi = document.createElement('li')
+                let removeBtn = document.createElement('img')
+                let taskCheck = document.createElement('input')
+
+                taskCheck.type = 'checkbox'
+
+                removeBtn.src = 'trashcan.jfif'
+                removeBtn.className = 'btn-remove'
+
+                taskLi.innerText = inputAdd.value
+
+                taskDiv.className = 'div-task'
+
+                removeBtn.addEventListener('click', removeTask)
+                taskLi.addEventListener('click', checkTask)
+                taskCheck.addEventListener('change', checkTask)
+                taskDiv.append(taskLi)
+                taskDiv.append(taskCheck)
+                taskDiv.append(removeBtn)
+                todoList.append(taskDiv)
+                inputAdd.value = ''
+            } else {
+                alert('Não é possível adicionar uma tarefa vazia')
+            }
+        }
+
+        btnAdd.addEventListener('click', addTask)
+    </script>
+</body>
+
+</html>
