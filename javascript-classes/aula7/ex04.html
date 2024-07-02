@@ -9,16 +9,34 @@
 
 <body>
     <h1>Bem vindo de volta!</h1>
-    <form id="password-form">
         <label for="password-input">Digite sua senha:</label>
         <input type="password" id="password-input" placeholder="Senha">
-        <button type="submit">Login</button>
+        <button id="btn-login" type="button">Login</button>
         <p id="feedback" style="color: red;"></p>
-    </form>
     <script>
         // Implemente a função necessária para verificar se o usuário entrou com a senha correta ou incorreta.
         // Determine qual será a senha correta.
         // Quando o usuário clicar no botão "Login" a senha deverá ser verificada, caso esteja correta a mensagem: "Senha correta!" em verde deverá ser exibida no parágrafo "feedback", caso contrário a mensagem "Senha Incorreta! Tente novamente" deverá ser exibida em vermelho no parágrafo "feedback".
+        let inputSenha = document.getElementById('password-input')
+        let feedback = document.getElementById('feedback')
+        let btnLogin = document.getElementById('btn-login')
+
+        const senhaCorreta = '1234'
+
+        function verificaSenha() {
+            let senhaDigitada = inputSenha.value
+
+            if (senhaCorreta === senhaDigitada) {
+                feedback.innerText = 'Senha Correta'
+                feedback.style.color = 'green'
+            } else {
+                feedback.innerText = 'Senha Incorreta! Tente novamente'
+                feedback.style.color = 'red'
+            }
+        }
+
+        btnLogin.addEventListener('click', verificaSenha)
+    
     </script>
 </body>
 
