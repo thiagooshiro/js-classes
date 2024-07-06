@@ -9,21 +9,19 @@
 
 <body>
     <h1>Todo List</h1>
-    <form id="todo-form">
-        <input type="text" id="todo-input" placeholder="Enter a task">
-        <button type="submit">Add</button>
-    </form>
+    <input type="text" id="todo-input" placeholder="Adicione a tarefa">
+    <button type="button" id="btn-add">Adicionar</button>
     <ul id="todo-list"></ul>
 
-    <script>
-        const form = document.getElementById('todo-form');
-        const input = document.getElementById('todo-input');
-        const list = document.getElementById('todo-list');
 
-        //Implemente a função "addTodoItem" de forma que seja possível adicionar novas tarefas à lista de tarefas. Não altere a linha 25.
-
-        form.addEventListener('submit', addTodoItem);
-    </script>
 </body>
+
+<script>
+    const input = document.getElementById('todo-input');
+    const list = document.getElementById('todo-list');
+    //Implemente a função necessária para quando o usuário digitar uma tarefa no input de id "todo-input" e clicar no botão "btn-add" adicione um novo elemento "li" dentro da lista de id "todo-list" com a nova tarefa a ser adicionada.
+
+
+</script>
 
 </html>

@@ -1,9 +1,10 @@
-// Exemplo arrow function;
+// Exemplo ed sintaxe arrow function;
 
 const minhaFunc = () => {
     return "Hello Arrow Function!"
 }
 
+//Executando a função minhaFunc dentro do método console.log.
 console.log(minhaFunc())
 
 

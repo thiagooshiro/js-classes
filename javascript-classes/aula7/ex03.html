@@ -11,35 +11,30 @@
     <div>
         <button id="prev" onclick="prevImage()">Anterior</button>
         <img id="gallery" src="image1.jpg" alt="Image 1">
-        <button id="next" onclick="nextImage()" >Próxima</button>
+        <button id="next" onclick="nextImage()">Próxima</button>
     </div>
 
-    <script>
-        const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
-        let gallery = document.getElementById("gallery")
-        let currentIndex = 0;
 
-        function nextImage() {
-            currentIndex = currentIndex + 1
-            if (currentIndex > images.length - 1) {
-                currentIndex = 0
-            }
-            gallery.src = images[currentIndex]
-        }
-
-        function prevImage() {
-            currentIndex = currentIndex - 1 
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1
-            }
-            gallery.src = images[currentIndex]
-        }
-        
-
-        // Implemente as funções necessarias para que o botão "Próxima" apresente a proxima imagem da galeria
-        // O botão "Anterior" apresente a imagem anterior.
-
-    </script>
 </body>
+<script>
+    // Implemente as funções necessarias para que:
+    // o botão "Próxima" apresente a proxima imagem da galeria
+    // O botão "Anterior" apresente a imagem anterior.
+    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+    let gallery = document.getElementById("gallery")
+    let currentIndex = 0;
+
+    function nextImage() {
+
+    }
+
+    function prevImage() {
+
+    }
+
+
+
+
+</script>
 
 </html>
