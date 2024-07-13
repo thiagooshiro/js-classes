@@ -12,8 +12,7 @@
     <div id="criar">
         <button id="decrementar">-</button>
         <span id="contador">0</span>
-        <button id="incrementar">+</button>
-        <button id="criacao">Crie um trem</button>
+        <button id="incrementar" onclick="incrementar()">+</button>
     </div>
 
     <script>
@@ -23,38 +22,8 @@
         let bntDec = document.getElementById('decrementar')
         let spanzinho = document.getElementById('contador')
         let bntAdd = document.getElementById('incrementar')
-        let divCriar = document.getElementById('criar')
-        let btnCriar = document.getElementById('criacao')
         let contador = 0
-    
-        function incrementar() {
-            contador = contador + 1
-            spanzinho.innerText = contador
-        }
-
-        function decrementar() {
-            contador -= 1
-            spanzinho.innerText = contador
-        }
-
-
-        function adicionarElemento() {
-            let novaUl = document.createElement('ul')
-            let novaLi = document.createElement('li')
-
-            novaLi.innerText = 'Arroz'
-            novaUl.append(novaLi)
-            divCriar.append(novaUl)
-
-        }
-
-        bntAdd.addEventListener('click', incrementar)
-        bntAdd.addEventListener('mouseover', function() {
-            document.body.style.backgroundColor = 'red'
-        })
-        bntDec.addEventListener('click', decrementar)
-        
-        btnCriar.addEventListener('click', adicionarElemento)
+   
         
 
     </script>
