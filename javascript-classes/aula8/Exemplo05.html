@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement & append</title>
+</head>
+
+<body>
+    <h1>Exemplo createElement e append</h1>
+    <div id="sem-filhos">
+
+    </div>
+
+    <button id="btn-fiote">Clique aqui...</button>
+    <script>
+        //O método createElement permite que criemos novos elementos no HTML através do javascript.
+
+        let divTriste = document.getElementById('sem-filhos')
+        let bntCriar = document.getElementById('btn-fiote')
+
+        function gerarFiote() {
+            //O método createElement criará um elemento de acordo com a string passada como paramêtro, nesse caso, será criado uma nova tag "p" (parágrafo)
+            let fiote = document.createElement('p')
+
+            fiote.innerText = "Fui criado!" // O novo paragrafo criado estará vazio, por isso é necessário captura-lo numa variável (fiote) para que possamos alterá-lo.
+
+            //O método append permite que o elemento seja posicionado no HTML como filho de outro elemento, no exemplo a seguir, nosso novo elemento paragrafo será filho da div de id "sem-filhos":
+
+            divTriste.append(fiote)
+            //Se observarmos os elementos HTML da página através do "inspecionar" do navegador, veremos que o paragrafo foi criado "dentro" da div de id "sem filhos"
+        }
+
+
+        bntCriar.addEventListener('click', gerarFiote)
+    </script>
+</body>
+
+</html>

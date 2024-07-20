@@ -9,24 +9,30 @@
 
 <body>
     <h1>Ex Contador</h1>
-    <div id="criar">
+    <div>
         <button id="decrementar">-</button>
         <span id="contador">0</span>
         <button id="incrementar" onclick="incrementar()">+</button>
     </div>
 
-    <script>
-        // Ex1 - Implemente as funções necessárias:
-        // O botão "decrementar" ao ser clicado deverá diminuir o valor contido no span "contador" em -1
-        // O botão "incrementar", ao ser clicado, deverá incrementar o valor contido no span "contador" em +1
-        let bntDec = document.getElementById('decrementar')
-        let spanzinho = document.getElementById('contador')
-        let bntAdd = document.getElementById('incrementar')
-        let contador = 0
-   
-        
 
-    </script>
 </body>
+
+<script>
+    // Ex1 - Implemente as funções necessárias:
+    // O botão "decrementar" ao ser clicado deverá diminuir o valor contido no span "contador" em -1
+    // O botão "incrementar", ao ser clicado, deverá incrementar o valor contido no span "contador" em +1
+    let spanzinho = document.getElementById('contador')
+    let contador = 0
+    function incrementar() {
+
+    }
+    function decrementar() {
+
+    }
+
+    bntDec.addEventListener('click', decrementar)
+
+</script>
 
 </html>

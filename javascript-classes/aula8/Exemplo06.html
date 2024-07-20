@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <h1>Lista de compras</h1>
+    <ol></ol>
+
+
+    <button id="ver-lista">Ver lista de compras!</button>
+    <script>
+        //Nesse exemplo utilizaremos o createElement com laço de repetição para adicionar os itens da variável "produtos" como elementos da lista (li) dentro da lista ordenada no HTML
+
+        let produtos = ['ameixa', 'pera', 'leite', 'papel higiênico', 'sabão', 'shampoo', 'arroz', 'feijão', 'alface', 'sardinha', 'molho de tomate']
+
+        let listaVazia = document.querySelector('ol')
+        let bntVerLista = document.querySelector('#ver-lista')
+
+
+        function verLista() {
+            listaVazia.innerHTML = ''
+            for (let produto of produtos) {
+                let novaLi = document.createElement('li')
+                novaLi.innerText = produto
+                listaVazia.append(novaLi)
+            }
+        }
+
+
+        bntVerLista.addEventListener('click', verLista)
+    </script>
+</body>
+
+</html>

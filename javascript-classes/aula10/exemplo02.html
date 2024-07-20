@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Parent and Child Elements - parte 2</title>
+    <link rel="stylesheet" href="examples.css">
+</head>
+
+<body>
+    <div id="pai">
+        <p id="primeiro">Primeiro filho</p>
+        <p id="segundo">Primeiro filho</p>
+        <p id="terceiro">Primeiro filho</p>
+        <p id="quarto">Primeiro filho</p>
+        <p id="quinto">Primeiro filho</p>
+    </div>
+    <div id="tio">
+        <p>Primo</p>
+    </div>
+    <button id="btn-log">Logar Filhos</button>
+
+    <script>
+        // Nesse exemplo iremos brincar de acessar elementos no DOM a partir de sua estrutura hieraqruica, usandos propriedades "parentElement" e "firstElementChild"
+
+        let paragrafo1 = document.querySelector('p') // Nesse caso o método "querySelector" irá capturar o primeiro elemento "p" no HTML, no caso, o "Primeiro Filho"
+
+        let btnShow = document.getElementById('btn-log');
+
+        // Nesse exemplo usaremos o primeiro paragrafo para acessar a div com id "tio"  e o paragrafo filho deste (no caso, o "primo"). Iremos alterar a cor de fundo da div "tio" e o texto do paragrafo que possui o texto "Primo"
+
+        function incomodarTioEPrimo() {
+            let divPai = paragrafo1.parentElement  //Acessamos aqui a div de id "pai" como um "passo" para acessarmos o elemento de id "tio"
+            let bodyAvo = divPai.parentElement // A partir da referência da div pai acessamos o "body" que é pai da div de id "pai", nessa lógica então o "avô" do nosso parágrafo
+
+            let tio = bodyAvo.children[1] // A partir da referência do body (capturado na variável bodyAvo) podemos acessar a div de id "tio" através do atributo children. Como o atributo children é um HTMLColleciton (uma lista, ou array) podemos acessar via índice o paragrafo de id "tio", nesse exemplo através do índice 1
+
+            tio.style.backgroundColor = 'red'
+            tio.firstElementChild.innerText = "Aqui estava o primo do primeiro paragrafo"
+
+            //Atenção, as propriedades "firstChild" e "firstElementChild" NÃO são iguais, via de regra procure utilizar o "firstElementChild" quando for utilizar esse recurso.
+        }
+
+        btnShow.addEventListener('click', incomodarTioEPrimo);
+    </script>
+</body>
+
+</html>
