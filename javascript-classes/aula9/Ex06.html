@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Pedra, Papel e Tesoura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .choice {
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Pedra, Papel e Tesoura</h1>
+    <form id="rpsForm">
+        <label>
+            <input type="radio" name="choice" value="rock"> Pedra
+        </label>
+        <label>
+            <input type="radio" name="choice" value="paper"> Papel
+        </label>
+        <label>
+            <input type="radio" name="choice" value="scissors"> Tesoura
+        </label>
+        <br><br>
+        <button type="submit">Jogar</button>
+    </form>
+    <div id="result">
+        <!-- O resultado do jogo será exibido aqui -->
+    </div>
+    <script>
+        //Considere o HTML acima como a estrutura de um jogo simples de pedra, papel e tesoura;
+        //Implemente o script necessário para que o jogo funcione adequadamente.
+        //O usuário deve ser capaz de escolher entre pedra e papel ou tesoura a partir dos radio button;
+        //A máquina escolherá aleatoriamente entre pedra, papel e tesoura a cada partida;
+        //Implemente uma função "Jogo" que quando o botão "jogar" for clicado a função será executada
+        //Essa função deverá conter toda a lógica necessária para o jogo. 
+        //Lembrando: Pedra vence Tesoura, Tesoura vence papel, Papel vence Pedra;
+        //O placar do jogo deverá ser exibido dentro da div "result" no formato:
+        // Máquina: {pontuação} x Jogador: {pountação}
+    </script>
+</body>
+</html>
