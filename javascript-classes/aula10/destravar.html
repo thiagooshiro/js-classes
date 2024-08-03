@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destravar.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div>
+        <h2>Lista de Tarefas</h2>
+        <input id="input-tarefa" type="text">
+        <button id="adicionar-tarefa">Adicionar Tarefa</button>
+        <ul id="lista-tarefas">
+
+        </ul>
+
+    </div>
+</body>
+<script>
+    let inputTarefa = document.getElementById('input-tarefa')
+    let btnAdd = document.getElementById('adicionar-tarefa')
+    let listaTarefas = document.getElementById('lista-tarefas')
+
+    function removerTarefa(event) {
+        let btnrmv = event.target
+        btnrmv.parentElement.remove()
+    }
+    
+
+    function adicionarTarefa() {
+        // Texto da tarefa
+        let novoTexto = document.createElement('li')
+        novoTexto.innerText = inputTarefa.value
+
+        // Checkbox de "status" da tarefa
+        let checkboxInput = document.createElement('input')
+        checkboxInput.type = 'checkbox'
+    
+        // Botão de remover
+        let btnRemove = document.createElement('button')
+        btnRemove.innerText = 'Remover'
+
+        btnRemove.addEventListener('click', removerTarefa)
+        //Um elemento pra guardar os novos elementos:
+        let novaDiv = document.createElement('div')
+        novaDiv.append(novoTexto)
+        novaDiv.append(checkboxInput)
+        novaDiv.append(btnRemove)
+        novaDiv.className = 'divLista'
+
+        listaTarefas.append(novaDiv)
+    } 
+
+    btnAdd.addEventListener('click', adicionarTarefa)
+</script>
+</html>
