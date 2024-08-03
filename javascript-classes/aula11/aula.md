@@ -2,6 +2,8 @@
 
 Link do Drive: https://drive.google.com/drive/folders/1rI8F3BO0T84-K8-HlbyhOAOU5DJWITlI?usp=sharing
 
+Por favor, faça download dos arquivos do drive localmente ou clone o repositório do github para facilitar seus estudos e a realização dos exercícios.
+
 ### Introdução
 
 Bem-vindos à Aula 11 de JavaScript!
@@ -23,6 +25,8 @@ Na pasta "exercicios" vocês encontrarão os exercícios fundamentais da aula, s
 Leia o arquivo "Orientação.md" para ver uma explicação mais detalhada sobre os exercícios.
 
 Na pasta "desafio" vocês encontrarão um desafio bastante ousado e que provavelmente levará algum tempo até conseguirem concluir todos os exercícios propostos nele.
+
+Na pasta "extras" vocês encontrarão exemplos com algumas funções agregadoras adicionais, não é útil nem prático listar todas, essas só foram algumas extras que quis adicionar existe MUITAS outras, para isso é sempre importante pesquisar a respeito.
 
 Caso queiram, vocês sempre podem me enviar as soluções dos exercícios, vou ficar bem satisfeito em ver os caminhos que encontraram para solucionar os problemas propostos e oferecer um retorno pra vocês.
 
