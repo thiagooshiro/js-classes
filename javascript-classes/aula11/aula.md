@@ -1,5 +1,7 @@
 ## Aula 11: Funções Agregadoras e Objetos em JavaScript
 
+Link do Drive: https://drive.google.com/drive/folders/1rI8F3BO0T84-K8-HlbyhOAOU5DJWITlI?usp=sharing
+
 ### Introdução
 
 Bem-vindos à Aula 11 de JavaScript!
@@ -13,6 +15,16 @@ Cada arquivo que possuí o nome da função agregadora é um arquivo de exemplo 
 `map` e `filter` possuem dois arquivo de exemplo e `reduce` possui três arquivos de exemplo.
 
 O objetivo desses arquivos de exemplo é servirem como referência de usos em casos mais simples e mais complexos dessas funções agregadoras.
+
+
+### Exercícios e Desafio:
+
+Na pasta "exercicios" vocês encontrarão os exercícios fundamentais da aula, separados por método.
+Leia o arquivo "Orientação.md" para ver uma explicação mais detalhada sobre os exercícios.
+
+Na pasta "desafio" vocês encontrarão um desafio bastante ousado e que provavelmente levará algum tempo até conseguirem concluir todos os exercícios propostos nele.
+
+Caso queiram, vocês sempre podem me enviar as soluções dos exercícios, vou ficar bem satisfeito em ver os caminhos que encontraram para solucionar os problemas propostos e oferecer um retorno pra vocês.
 
 
 ## Um pequeno desvio: Introdução a Objetos;
