@@ -90,4 +90,4 @@ Esses recursos oferecem uma visão abrangente sobre como usar esses métodos e s
 ## Conclusão
 
 Hoje aprendemos sobre funções agregadoras e a manipulação de objetos em JavaScript. Pratique com os exemplos fornecidos e explore mais sobre esses métodos para aprimorar suas habilidades.
-```
+
