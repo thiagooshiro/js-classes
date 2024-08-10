@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM getElementById & addEventListener</title>
+</head>
+
+<body>
+    <h1>Exemplo getElementById e addEventListener</h1>
+    <p id="resultado">Este parágrafo será alterado</p>
+    <button id="btn-change">Clique em mim</button>
+</body>
+
+<script>
+    // Utilizamos DOM (Document Object Model) para interagir com o HTML via JavaScript.
+    let paragrafo = document.getElementById('resultado'); // Nesta linha estamos "capturando" na variável "paragrafo" o elemento HTML que POSSUI O ID "resultado".
+
+    let botao = document.getElementById('btn-change'); // Nesta linha "capturamos" o botão com id "btn-change" na variável "botao".
+
+    // "Capturar" os elementos HTML permite que manipulemos seus atributos ou criemos comportamentos.
+
+    // elemento.addEventListener cria um "escutador de eventos" a um elemento (nesse caso o botão). Possui dois parâmetros: a ação, que é o primeiro parâmetro (neste caso "click"), e o segundo parâmetro é a função que será executada quando a "ação monitorada" acontecer - ou seja, quando o botão "btn-change" for clicado, a função que foi passada como segundo parâmetro será executada.
+    botao.addEventListener('click', function () {
+        paragrafo.innerText = "Você clicou no botão";
+    });
+
+    // A função executada, por sua vez, altera a propriedade "innerText" (o texto) do parágrafo "resultado".
+    // Diferentes elementos HTML possuem diferentes propriedades. Não há necessidade de decorar, vez ou outra cabe pesquisar com qual propriedade estamos lidando.
+</script>
+
+</html>

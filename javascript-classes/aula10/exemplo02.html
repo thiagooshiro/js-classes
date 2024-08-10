@@ -37,13 +37,16 @@
             let tio = bodyAvo.children[1] // A partir da referência do body (capturado na variável bodyAvo) podemos acessar a div de id "tio" através do atributo children. Como o atributo children é um HTMLColleciton (uma lista, ou array) podemos acessar via índice o paragrafo de id "tio", nesse exemplo através do índice 1
 
             tio.style.backgroundColor = 'red'
-            tio.firstElementChild.innerText = "Aqui estava o primo do primeiro paragrafo"
+            let primo = tio.firstElementChild
+            primo.innerText = "Aqui estava o primo do primeiro paragrafo"
 
             //Atenção, as propriedades "firstChild" e "firstElementChild" NÃO são iguais, via de regra procure utilizar o "firstElementChild" quando for utilizar esse recurso.
         }
+
 
         btnShow.addEventListener('click', incomodarTioEPrimo);
     </script>
 </body>
 
 </html>
+
