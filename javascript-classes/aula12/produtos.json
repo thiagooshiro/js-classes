@@ -1,0 +1,503 @@
+[
+    {
+      "nome": "Produto 1",
+      "preco": 2873.53,
+      "estoque": 10
+    },
+    {
+      "nome": "Produto 2",
+      "preco": 1532.45,
+      "estoque": 20
+    },
+    {
+      "nome": "Produto 3",
+      "preco": 329.99,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 4",
+      "preco": 4000.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 5",
+      "preco": 199.99,
+      "estoque": 100
+    },
+    {
+      "nome": "Produto 6",
+      "preco": 250.75,
+      "estoque": 35
+    },
+    {
+      "nome": "Produto 7",
+      "preco": 2999.95,
+      "estoque": 5
+    },
+    {
+      "nome": "Produto 8",
+      "preco": 1499.99,
+      "estoque": 60
+    },
+    {
+      "nome": "Produto 9",
+      "preco": 2500.00,
+      "estoque": 12
+    },
+    {
+      "nome": "Produto 10",
+      "preco": 100.00,
+      "estoque": 150
+    },
+    {
+      "nome": "Produto 11",
+      "preco": 2750.89,
+      "estoque": 45
+    },
+    {
+      "nome": "Produto 12",
+      "preco": 3100.50,
+      "estoque": 30
+    },
+    {
+      "nome": "Produto 13",
+      "preco": 849.75,
+      "estoque": 90
+    },
+    {
+      "nome": "Produto 14",
+      "preco": 1120.20,
+      "estoque": 70
+    },
+    {
+      "nome": "Produto 15",
+      "preco": 2200.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 16",
+      "preco": 1800.99,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 17",
+      "preco": 3500.00,
+      "estoque": 15
+    },
+    {
+      "nome": "Produto 18",
+      "preco": 119.99,
+      "estoque": 200
+    },
+    {
+      "nome": "Produto 19",
+      "preco": 500.00,
+      "estoque": 85
+    },
+    {
+      "nome": "Produto 20",
+      "preco": 2799.99,
+      "estoque": 45
+    },
+    {
+      "nome": "Produto 21",
+      "preco": 1400.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 22",
+      "preco": 2399.50,
+      "estoque": 60
+    },
+    {
+      "nome": "Produto 23",
+      "preco": 3300.00,
+      "estoque": 40
+    },
+    {
+      "nome": "Produto 24",
+      "preco": 2100.75,
+      "estoque": 20
+    },
+    {
+      "nome": "Produto 25",
+      "preco": 999.99,
+      "estoque": 95
+    },
+    {
+      "nome": "Produto 26",
+      "preco": 150.00,
+      "estoque": 130
+    },
+    {
+      "nome": "Produto 27",
+      "preco": 3800.00,
+      "estoque": 10
+    },
+    {
+      "nome": "Produto 28",
+      "preco": 1750.99,
+      "estoque": 55
+    },
+    {
+      "nome": "Produto 29",
+      "preco": 299.99,
+      "estoque": 150
+    },
+    {
+      "nome": "Produto 30",
+      "preco": 650.75,
+      "estoque": 110
+    },
+    {
+      "nome": "Produto 31",
+      "preco": 4100.99,
+      "estoque": 18
+    },
+    {
+      "nome": "Produto 32",
+      "preco": 3250.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 33",
+      "preco": 750.00,
+      "estoque": 105
+    },
+    {
+      "nome": "Produto 34",
+      "preco": 2900.75,
+      "estoque": 40
+    },
+    {
+      "nome": "Produto 35",
+      "preco": 870.99,
+      "estoque": 95
+    },
+    {
+      "nome": "Produto 36",
+      "preco": 4700.00,
+      "estoque": 12
+    },
+    {
+      "nome": "Produto 37",
+      "preco": 2599.99,
+      "estoque": 60
+    },
+    {
+      "nome": "Produto 38",
+      "preco": 3400.00,
+      "estoque": 20
+    },
+    {
+      "nome": "Produto 39",
+      "preco": 1200.99,
+      "estoque": 80
+    },
+    {
+      "nome": "Produto 40",
+      "preco": 2450.00,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 41",
+      "preco": 350.00,
+      "estoque": 120
+    },
+    {
+      "nome": "Produto 42",
+      "preco": 4500.50,
+      "estoque": 22
+    },
+    {
+      "nome": "Produto 43",
+      "preco": 1850.00,
+      "estoque": 65
+    },
+    {
+      "nome": "Produto 44",
+      "preco": 3150.75,
+      "estoque": 35
+    },
+    {
+      "nome": "Produto 45",
+      "preco": 975.00,
+      "estoque": 100
+    },
+    {
+      "nome": "Produto 46",
+      "preco": 3700.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 47",
+      "preco": 1350.99,
+      "estoque": 75
+    },
+    {
+      "nome": "Produto 48",
+      "preco": 2450.00,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 49",
+      "preco": 1575.99,
+      "estoque": 70
+    },
+    {
+      "nome": "Produto 50",
+      "preco": 399.99,
+      "estoque": 140
+    },
+    {
+      "nome": "Produto 51",
+      "preco": 4300.00,
+      "estoque": 20
+    },
+    {
+      "nome": "Produto 52",
+      "preco": 3050.50,
+      "estoque": 35
+    },
+    {
+      "nome": "Produto 53",
+      "preco": 2250.00,
+      "estoque": 45
+    },
+    {
+      "nome": "Produto 54",
+      "preco": 875.99,
+      "estoque": 90
+    },
+    {
+      "nome": "Produto 55",
+      "preco": 2850.75,
+      "estoque": 40
+    },
+    {
+      "nome": "Produto 56",
+      "preco": 3999.99,
+      "estoque": 30
+    },
+    {
+      "nome": "Produto 57",
+      "preco": 550.00,
+      "estoque": 110
+    },
+    {
+      "nome": "Produto 58",
+      "preco": 3300.99,
+      "estoque": 55
+    },
+    {
+      "nome": "Produto 59",
+      "preco": 4050.75,
+      "estoque": 18
+    },
+    {
+      "nome": "Produto 60",
+      "preco": 2899.99,
+      "estoque": 45
+    },
+    {
+      "nome": "Produto 61",
+      "preco": 1650.00,
+      "estoque": 80
+    },
+    {
+      "nome": "Produto 62",
+      "preco": 2350.50,
+      "estoque": 65
+    },
+    {
+      "nome": "Produto 63",
+      "preco": 720.00,
+      "estoque": 115
+    },
+    {
+      "nome": "Produto 64",
+      "preco": 4100.99,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 65",
+      "preco": 1940.00,
+      "estoque": 70
+    },
+    {
+      "nome": "Produto 66",
+      "preco": 3750.50,
+      "estoque": 35
+    },
+    {
+      "nome": "Produto 67",
+      "preco": 2599.99,
+      "estoque": 55
+    },
+    {
+      "nome": "Produto 68",
+      "preco": 1599.99,
+      "estoque": 85
+    },
+    {
+      "nome": "Produto 69",
+      "preco": 299.99,
+      "estoque": 120
+    },
+    {
+      "nome": "Produto 70",
+      "preco": 499.99,
+      "estoque": 100
+    },
+    {
+      "nome": "Produto 71",
+      "preco": 4499.99,
+      "estoque": 20
+    },
+    {
+      "nome": "Produto 72",
+      "preco": 2899.50,
+      "estoque": 60
+    },
+    {
+      "nome": "Produto 73",
+      "preco": 3750.75,
+      "estoque": 40
+    },
+    {
+      "nome": "Produto 74",
+      "preco": 1500.50,
+      "estoque": 75
+    },
+    {
+      "nome": "Produto 75",
+      "preco": 399.99,
+      "estoque": 140
+    },
+    {
+      "nome": "Produto 76",
+      "preco": 2999.99,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 77",
+      "preco": 499.99,
+      "estoque": 110
+    },
+    {
+      "nome": "Produto 78",
+      "preco": 1399.99,
+      "estoque": 90
+    },
+    {
+      "nome": "Produto 79",
+      "preco": 4750.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 80",
+      "preco": 1900.75,
+      "estoque": 80
+    },
+    {
+      "nome": "Produto 81",
+      "preco": 250.00,
+      "estoque": 150
+    },
+    {
+      "nome": "Produto 82",
+      "preco": 3600.50,
+      "estoque": 30
+    },
+    {
+      "nome": "Produto 83",
+      "preco": 2599.99,
+      "estoque": 55
+    },
+    {
+      "nome": "Produto 84",
+      "preco": 1250.99,
+      "estoque": 100
+    },
+    {
+      "nome": "Produto 85",
+      "preco": 3250.00,
+      "estoque": 45
+    },
+    {
+      "nome": "Produto 86",
+      "preco": 750.00,
+      "estoque": 110
+    },
+    {
+      "nome": "Produto 87",
+      "preco": 4500.00,
+      "estoque": 25
+    },
+    {
+      "nome": "Produto 88",
+      "preco": 1899.99,
+      "estoque": 75
+    },
+    {
+      "nome": "Produto 89",
+      "preco": 350.00,
+      "estoque": 120
+    },
+    {
+      "nome": "Produto 90",
+      "preco": 399.99,
+      "estoque": 140
+    },
+    {
+      "nome": "Produto 91",
+      "preco": 2350.50,
+      "estoque": 70
+    },
+    {
+      "nome": "Produto 92",
+      "preco": 1950.00,
+      "estoque": 85
+    },
+    {
+      "nome": "Produto 93",
+      "preco": 3250.00,
+      "estoque": 60
+    },
+    {
+      "nome": "Produto 94",
+      "preco": 1250.99,
+      "estoque": 90
+    },
+    {
+      "nome": "Produto 95",
+      "preco": 2850.00,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 96",
+      "preco": 1750.00,
+      "estoque": 80
+    },
+    {
+      "nome": "Produto 97",
+      "preco": 300.00,
+      "estoque": 130
+    },
+    {
+      "nome": "Produto 98",
+      "preco": 999.99,
+      "estoque": 100
+    },
+    {
+      "nome": "Produto 99",
+      "preco": 1500.00,
+      "estoque": 65
+    },
+    {
+      "nome": "Produto 100",
+      "preco": 2350.00,
+      "estoque": 45
+    }
+  ]
+  
