@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas por Prioridade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar nova tarefa -->
+        <section id="add-task-section">
+            <h2>Adicionar Nova Tarefa</h2>
+            <input type="text" id="task-name" placeholder="Nome da tarefa" required>
+            <textarea id="task-desc" placeholder="Descrição da tarefa" required></textarea>
+            <select id="task-priority">
+                <option value="alta">Alta</option>
+                <option value="média">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            <select id="task-category">
+                <option value="trabalho">Trabalho</option>
+                <option value="pessoal">Pessoal</option>
+                <option value="outros">Outros</option>
+            </select>
+            <button id="add-task-btn">Adicionar Tarefa</button>
+        </section>
+
+        <!-- Seção de busca -->
+        <section id="search-task-section">
+            <h2>Buscar Tarefas</h2>
+            <input type="text" id="search-input" placeholder="Buscar por nome">
+            <button id="search-btn">Buscar</button>
+        </section>
+
+        <!-- Seção para exibir tarefas -->
+        <section id="tasks-section">
+            <h2>Tarefas</h2>
+            <div id="task-container">
+                <!-- As tarefas serão renderizadas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lista de Tarefas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
