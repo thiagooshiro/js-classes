@@ -9,6 +9,12 @@ h1 {
     text-align: center;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
 .search-container {
     text-align: center;
     margin-bottom: 20px;
@@ -27,7 +33,7 @@ select {
 
 .recipe {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 18px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     width: 300px;
@@ -50,4 +56,31 @@ select {
 .recipe p {
     padding: 0 10px 10px;
     text-align: left;
+}
+
+
+.recipe-details {
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.recipe-details img {
+    display: flex;
+    width: 50%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorções */
+    border-bottom: 4px solid #ddd; /* Adiciona uma borda para separação visual */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }

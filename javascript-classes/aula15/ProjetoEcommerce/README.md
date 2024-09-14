@@ -1,39 +1,3 @@
-### Introdução ao Exercício: Construindo uma Loja Virtual Dinâmica
-
-Neste exercício, você terá a oportunidade de desenvolver um sistema dinâmico de e-commerce baseado em uma API real, a **Fake Store API**. Ao longo desta atividade, você criará uma aplicação que simula uma loja online, onde usuários poderão visualizar produtos, adicionar itens ao carrinho de compras, aplicar filtros por categoria e até simular um processo de checkout.
-
-O objetivo deste projeto é replicar algumas das funcionalidades essenciais encontradas em plataformas de e-commerce modernas. No processo, você vai praticar e aprimorar suas habilidades em:
-
-- **Consumo de APIs REST**: Através de requisições HTTP, você irá consumir dados de produtos e categorias da Fake Store API, exibindo essas informações de maneira eficiente e visualmente atraente.
-- **Manipulação do DOM**: Você será responsável por criar e manipular elementos na página de forma dinâmica, gerando listagens de produtos, botões de filtro, formulários de checkout, entre outros.
-- **Funções Assíncronas (async/await)**: Para garantir que sua aplicação funcione de forma fluida e sem travamentos, você utilizará funções assíncronas para lidar com as requisições e respostas da API.
-- **Gestão de Estado Local (Carrinho de Compras)**: Será necessário criar um sistema simples de gerenciamento do estado do carrinho de compras, que pode incluir armazenamento no localStorage e atualizações em tempo real no DOM.
-- **Filtros e Pesquisa**: Desenvolverá funcionalidades que permitem ao usuário filtrar produtos por categoria, buscar por nome e visualizar detalhes específicos de cada item.
-- **Organização e Modularidade**: A medida que o sistema cresce, você terá a oportunidade de organizar seu código em funções modulares e reutilizáveis, uma habilidade chave no desenvolvimento de aplicações robustas.
-
-Ao final deste exercício, você terá construído um protótipo funcional de um sistema de e-commerce, e estará mais preparado para lidar com desafios do desenvolvimento web moderno, como o consumo de APIs, manipulação de dados e criação de interfaces dinâmicas. Boa sorte, e mãos à obra!
-
-
-### 1. **Listar Produtos na Página Inicial**
-
-**Descrição**: Crie uma função que faz uma requisição para listar todos os produtos da API e os exiba na página inicial.
-
-- **Endpoint**: `GET https://fakestoreapi.com/products`
-
-```javascript
-async function fetchProducts() {
-    try {
-        const response = await fetch('https://fakestoreapi.com/products');
-        const products = await response.json();
-        
-        // # Escreva seu código aqui para exibir os produtos
-    } catch (error) {
-        console.error('Erro ao buscar produtos:', error);
-    }
-}Aqui está a adaptação com o tom mais direto, como solicitado:
-
----
-
 ### **Projeto de E-commerce: Fake Store API**
 
 #### **Objetivo do Projeto**
