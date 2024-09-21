@@ -1,8 +1,12 @@
+const loginForm = document.getElementById('login-form')
+
+
 // Função para exibir produtos (exemplo pronto)
 async function fetchProducts() {
     const ALL_PRODUCTS_ENDPOINT = 'https://fakestoreapi.com/products'; // Endpoint para buscar todos os produtos
     const response = await fetch(ALL_PRODUCTS_ENDPOINT);
     const products = await response.json();
+    console.log(products)
     renderProducts(products); // Chama a função para renderizar os produtos
 }
 
@@ -65,9 +69,32 @@ function checkout() {
     // # Escreva o código para finalizar a compra
 }
 
+const loginName = document.getElementById('login-name')
+const loginPassword = document.getElementById('login-password')
+async function handleLogin(e) {
+    e.preventDefault()
+    const response = await fetch('./usuarios.json')
+    console.log(response)
+    const data = await response.json()
+    console.log(data)
+    for (usuario of data) { 
+       if (usuario.nome == loginName && usuario.senha === loginPassword) {
+            alert('Login bem sucedido')
+       }
+    }
+}
+
+async function handleInput(e) {
+    console.log(e.target.value)
+}
+
+
 // Eventos de busca e checkout (já prontos)
 document.getElementById('search-btn').addEventListener('click', searchProducts);
 document.getElementById('checkout-btn').addEventListener('click', checkout);
+document.getElementById('submit-btn').addEventListener('click', handleLogin)
+loginName.addEventListener('change', (e) => handleInput(e))
+loginPassword.addEventListener('change', (e) => handleInput(e))
 
 // Exemplo de chamada para buscar produtos (ao carregar a página)
 fetchProducts();
