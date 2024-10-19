@@ -10,7 +10,7 @@
 
 // Exercício 2: Crie um programa que verifica se um número dado é par ou ímpar e imprime o resultado.
 
-// Exercício 3: Escreva um programa que solicita a idade do usuário e determina se ele é elegível para votar (18 anos ou mais).
+// Exercício 3: Escreva um programa que solicita a idade do usuário e determina se ele é elegível para votar (16 anos ou mais).
 
 // Exercício 4: Crie um programa que recebe uma string como entrada e verifica se ela começa com a letra 'A'. Imprima "Começa com A" se for verdadeiro, caso contrário, imprima "Não começa com A".
 
