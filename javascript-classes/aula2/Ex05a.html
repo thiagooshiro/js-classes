@@ -19,11 +19,7 @@
         // Exercício 5: Escreva um programa que solicita ao usuário uma senha. Se a senha for "12345", imprima "Acesso concedido"; caso contrário, imprima "Acesso negado".
             let senha = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
             let msg = ''
-            if (senha === '12345'){
-                msg = 'Acesso concedido'
-            } else {
-                msg = 'Acesso negado'
-            }
+           
             document.getElementById('resultado').innerText = msg   // Altera o elemento HTML com id correspondente adicionando o texto
         }
 

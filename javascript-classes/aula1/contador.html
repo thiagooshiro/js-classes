@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+
+<body>
+    <h1>Ex Contador</h1>
+    <div>
+        <button id="decrementar" onclick="decrementar()">-</button>
+        <span id="contador">0</span>
+        <button id="incrementar" onclick="incrementar()">+</button>
+    </div>
+
+
+</body>
+
+<script>
+    // Ex1 - Implemente as funções necessárias:
+    // O botão "decrementar" ao ser clicado deverá diminuir o valor contido no span "contador" em -1
+    // O botão "incrementar", ao ser clicado, deverá incrementar o valor contido no span "contador" em +1
+    let spanzinho = document.getElementById('contador')
+    let contador = 0
+    function incrementar() {
+        contador += 1
+        spanzinho.innerText = contador
+    }
+    function decrementar() {
+        contador -= 1
+        spanzinho.innerText = contador
+    }
+
+</script>
+
+</html>
