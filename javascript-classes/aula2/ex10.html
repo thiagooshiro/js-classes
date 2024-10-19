@@ -10,22 +10,22 @@
 <body>
     <h1>Exercícios de Javascript</h1>
     <label for="primeira">Digite a primeira nota:</label>
-    <input type="text" name="primeira" id="primeira">
-    <p id="resultado"></p>
+    <input type="number" name="primeira" id="primeira"><br>
     <label for="segunda">Digite a segunda nota:</label>
-    <input type="text" name="segunda" id="segunda">
-    <p id="resultado"></p>
+    <input type="number" name="segunda" id="segunda"> <br> 
     <label for="terceira">Digite a terceira nota:</label>
-    <input type="text" name="terceira" id="terceira">
-    <p id="resultado"></p>
+    <input type="number" name="terceira" id="terceira"> <br>
     <label for="quarta">Digite a quarta nota:</label>
-    <input type="text" name="quarta" id="quarta">
+    <input type="number" name="quarta" id="quarta"><br>
     <p id="resultado"></p>
     <button onclick="action()">Clique aqui para executar a função</button>
 
     <script>
         function action() {
-            let number = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
+            let primeira = parseFloat(document.getElementById('primeira').value)      // Captura o valor do input quando o botão é clicado
+            let segunda = parseFloat(document.getElementById('segunda').value)      // Captura o valor do input quando o botão é clicado
+            let terceira = parseFloat(document.getElementById('terceira').value)      // Captura o valor do input quando o botão é clicado
+            let quarta = parseFloat(document.getElementById('quarta').value)     // Captura o valor do input quando o botão é clicado           
             resultado = ''
             //Escreva aqui o programa de vocês:
             

@@ -24,4 +24,4 @@
 
 // Exercício 9: Escreva um programa que recebe um número como entrada e determina se é positivo, negativo ou zero. Imprima o resultado correspondente.
 
-// Exercício 10: Crie um programa que solicita ao usuário sua nota (A, B, C, D ou F) e imprime uma mensagem correspondente com base na nota:
+// Exercício 10: Crie um programa que solicita ao usuário 4 notas, e calcula a média dessas notas, caso a nota seja superior a 7, o programa deve mostrar na tela a mensagem: "Parabens você foi aprovado", caso contrário, imprima a mensagem: "Infelizmente você não foi aprovado, prepare-se para a recuperação final"
