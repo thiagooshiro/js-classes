@@ -3,7 +3,9 @@
 // A palavra-chave em JavaScript para declarar uma função é "function" seguida pelo nome da função:
 
 function boasVindas(nome) {
-    return `Seja bem-vindo ${nome}`;
+    let mensagem = `Seja bem vindo ${nome}`
+    console.log(mensagem)
+    return mensagem;
 }
 
 // Qualquer palavra que venha dentro dos parênteses da função quando esta é declarada é chamada de parâmetro da função. Nesse caso, temos o parâmetro "nome".

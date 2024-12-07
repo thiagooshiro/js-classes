@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria - Montando Seu Pedido</title>
+</head>
+
+<body>
+    <h1>Monte seu Hambúrguer</h1>
+
+    <div id="formulario">
+        <!-- Formulário para selecionar os itens do menu -->
+        <label for="pao">Escolha o tipo de pão:</label>
+        <select id="pao">
+            <option value="pao1">Pão de forma</option>
+            <option value="pao2">Pão brioche</option>
+            <option value="pao3">Pão francês</option>
+        </select>
+
+        <label for="carne">Escolha a carne:</label>
+        <select id="carne">
+            <option value="carne1">Carne bovina</option>
+            <option value="carne2">Carne de frango</option>
+            <option value="carne3">Hambúrguer vegetariano</option>
+        </select>
+
+        <label for="queijo">Escolha o tipo de queijo:</label>
+        <select id="queijo">
+            <option value="queijo1">Queijo cheddar</option>
+            <option value="queijo2">Queijo mussarela</option>
+            <option value="queijo3">Queijo prato</option>
+        </select>
+
+        <button id="btn-adicionar">Adicionar ao Pedido</button>
+    </div>
+
+    <div id="pedido">
+        <!-- Seção para exibir o pedido -->
+        <h2>Pedido Finalizado</h2>
+        <ul id="lista-pedido"></ul>
+        <p id="total">Total: R$ 0,00</p>
+    </div>
+
+    <script>
+        /* 
+        Exercício: Montando o Hamburguer Perfeito;
+
+        Objetivo:
+        Neste exercício, você será desafiado a criar um sistema interativo e delicioso de pedido de hambúrguer, como se fosse o mestre de uma hamburgueria de sucesso! Seu objetivo é permitir que o usuário, com um simples clique, escolha o pão, a carne e o queijo do seu hambúrguer dos sonhos. À medida que as opções são selecionadas, o sistema calculará automaticamente o valor de cada ingrediente e somará tudo para gerar o total final do pedido. E, claro, as escolhas de cada cliente devem ser exibidas de forma clara, precisa e visualmente apetitosa na tela. Prepare-se para criar uma experiência envolvente que reflete a magia de montar o hambúrguer perfeito, um ingrediente de cada vez!
+
+        Requisitos:
+        1. Criar um array de objetos, onde cada objeto representa um item do menu (pão, carne, queijo) e contém 
+           o nome do item e seu respectivo preço.
+        2. Quando o usuário selecionar um item do menu, o valor correspondente ao item deve ser somado ao total do pedido.
+        3. Exibir, na área de "Pedido Finalizado", uma lista com os itens que o usuário escolheu (por exemplo, pão brioche, carne bovina, etc.) e o preço de cada item.
+        4. Mostrar o valor total do pedido ao final, calculando a soma dos preços dos itens selecionados.
+
+        Dicas:
+        - Utilize `getElementById` ou `querySelector` para capturar os elementos HTML (como as opções de pão, carne e queijo).
+        - O botão de adicionar deve adicionar os itens selecionados à lista do pedido. 
+        - O total deve ser calculado dinamicamente a cada novo item adicionado, e deve ser exibido com duas casas decimais.
+        - Use o método `addEventListener` para capturar o clique no botão "Adicionar ao Pedido" e para disparar a ação de adicionar os itens à lista.
+        - Para buscar o preço de cada item, você pode usar o método `find()` para procurar pelo item correspondente no array de produtos.
+        - Não se esqueça de formatar o valor total do pedido em reais (R$), com duas casas decimais.
+
+        Exemplo do array de objetos com os valores de cada produto:
+
+        */
+
+        const menu = [
+            {
+                item: "pao1",
+                nome: "Pão de forma",
+                preco: 5.00
+            },
+            {
+                item: "pao2",
+                nome: "Pão brioche",
+                preco: 7.00
+            },
+            {
+                item: "pao3",
+                nome: "Pão francês",
+                preco: 4.50
+            },
+            {
+                item: "carne1",
+                nome: "Carne bovina",
+                preco: 10.00
+            },
+            {
+                item: "carne2",
+                nome: "Carne de frango",
+                preco: 8.00
+            },
+            {
+                item: "carne3",
+                nome: "Hambúrguer vegetariano",
+                preco: 9.00
+            },
+            {
+                item: "queijo1",
+                nome: "Queijo cheddar",
+                preco: 2.50
+            },
+            {
+                item: "queijo2",
+                nome: "Queijo mussarela",
+                preco: 3.00
+            },
+            {
+                item: "queijo3",
+                nome: "Queijo prato",
+                preco: 2.00
+            }
+        ];
+
+        /* 
+        O código abaixo deverá ser implementado pelo aluno para que o sistema funcione corretamente:
+        1. Capturar os valores dos itens selecionados (pão, carne e queijo).
+        2. Exibir o nome do item e o valor na lista de "Pedido Finalizado".
+        3. Atualizar o total do pedido conforme o usuário vai adicionando os itens.
+        4. Caso o aluno deseje, pode também melhorar o visual da página, como colorir os itens ou destacar o total do pedido.
+
+        Boa sorte e divirta-se implementando!
+        */
+    </script>
+</body>
+
+</html>

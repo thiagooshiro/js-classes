@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .clock-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .clock {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #2575fc;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock-container">
+        <div id="clock" class="clock">00:00:00</div>
+        <div class="button-container">
+            <button id="start-btn">Iniciar Relógio</button>
+            <button id="stop-btn">Parar Relógio</button>
+            <button id="reset-btn">Resetar</button>
+        </div>
+    </div>
+
+    <script>
+        // Implemente a funcionalidade para criar um relógio digital dinâmico:
+        // 1. O relógio deve exibir o horário atual (HH:MM:SS) no elemento de id "clock".
+        // 2. Crie uma lógica para que o horário seja atualizado automaticamente a cada segundo.
+        // 3. Utilize o botão de id "start-btn" para iniciar o relógio.
+        //     - Dica: se o relógio já estiver pausado, ele deve resetar o horário para a hora atual.
+        // 4. Utilize o botão de id "stop-btn" para pausar o relógio.
+        // 5. Implemente o botão de id "reset-btn" para reiniciar o relógio imediatamente para a hora atual e parar qualquer contagem ativa.
+        // Passo a passo:
+        // - Capture os elementos necessários: o elemento do relógio e os botões de controle.
+        // - Crie uma função que formata a hora atual no formato "HH:MM:SS" e atualiza o texto do elemento "clock".
+        // - Use `setInterval` para atualizar o horário a cada segundo quando o relógio está ativo.
+        // - Controle o estado do relógio com `clearInterval` e reinicialize a hora conforme necessário.
+        // Escreva seu código aqui:
+
+    </script>
+</body>
+
+</html>

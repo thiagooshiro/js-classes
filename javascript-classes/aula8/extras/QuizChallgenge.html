@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f0f0f0;
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quiz Interativo</h1>
+    <p id="question">Carregando pergunta...</p>
+    <ul id="options">
+        <!-- As opções de resposta serão inseridas dinamicamente -->
+    </ul>
+    <p id="score">Pontuação: 0</p>
+    <button id="next-question-btn" disabled>Próxima Pergunta</button>
+
+    <script>
+        // EXERCÍCIO: QUIZ INTERATIVO
+
+        // Neste exercício, você vai criar um quiz interativo onde o usuário deverá responder uma série de perguntas.
+        // Para cada pergunta, o usuário terá quatro opções de resposta e deverá escolher a resposta correta.
+        // O objetivo é exibir as perguntas e opções dinamicamente, verificar as respostas e exibir a pontuação do jogador.
+        
+        // REQUISITOS:
+        // 1. A primeira tarefa é exibir uma pergunta aleatória de uma lista pré-definida.
+        // 2. As opções de resposta devem ser inseridas dinamicamente na página.
+        // 3. O usuário deve poder clicar em uma opção de resposta e a pontuação deve ser atualizada.
+        // 4. Após a resposta, o botão "Próxima Pergunta" deve ser habilitado.
+        // 5. Quando o usuário clicar em "Próxima Pergunta", uma nova pergunta deve ser exibida, sem repetir perguntas anteriores.
+        // 6. Ao final de todas as perguntas, a pontuação final deve ser exibida e uma mensagem de "fim de quiz" deve aparecer.
+
+        // O array de objetos abaixo contém as perguntas e respostas já prontas. 
+        // A estrutura do array é a seguinte:
+        //   - Cada objeto tem a chave "question" com o texto da pergunta.
+        //   - A chave "answers" é um array com as opções de resposta.
+        //   - A chave "correct" contém a resposta correta.
+
+        const questions = [
+            { 
+                question: "Qual é a capital da França?",
+                answers: ["Paris", "Roma", "Berlim", "Londres"],
+                correct: "Paris"
+            },
+            { 
+                question: "Qual planeta é conhecido como o Planeta Vermelho?",
+                answers: ["Terra", "Marte", "Júpiter", "Vênus"],
+                correct: "Marte"
+            },
+            { 
+                question: "Quem pintou a Mona Lisa?",
+                answers: ["Van Gogh", "Leonardo da Vinci", "Picasso", "Michelangelo"],
+                correct: "Leonardo da Vinci"
+            },
+            { 
+                question: "Qual é o maior oceano do mundo?",
+                answers: ["Atlântico", "Índico", "Ártico", "Pacífico"],
+                correct: "Pacífico"
+            },
+            { 
+                question: "Em que ano o homem chegou à Lua?",
+                answers: ["1965", "1969", "1972", "1975"],
+                correct: "1969"
+            },
+            { 
+                question: "Quem escreveu 'Dom Quixote'?",
+                answers: ["Machado de Assis", "José de Alencar", "Miguel de Cervantes", "Fernando Pessoa"],
+                correct: "Miguel de Cervantes"
+            },
+            { 
+                question: "Qual é o símbolo químico da água?",
+                answers: ["O2", "H2O", "CO2", "HO2"],
+                correct: "H2O"
+            },
+            { 
+                question: "Quem foi o primeiro presidente dos Estados Unidos?",
+                answers: ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "John Adams"],
+                correct: "George Washington"
+            }
+        ];
+
+        // Lógica do exercício:
+        // 1. Ao carregar o script, uma pergunta aleatória deve ser escolhida e exibida no elemento "question".
+        // 2. As opções de resposta devem ser inseridas dinamicamente dentro da lista "ul" com id "options".
+        // 3. Ao clicar em uma opção, verifique se ela está correta e atualize a pontuação.
+        // 4. Após o clique, o botão de "Próxima Pergunta" deve ser habilitado.
+        // 5. Ao clicar em "Próxima Pergunta", carregue a próxima pergunta, mas sem repetir as anteriores.
+        // 6. Quando todas as perguntas forem respondidas, exiba a pontuação final e uma mensagem de "fim de quiz".
+
+        // A parte abaixo deve ser implementada pelos alunos:
+        // 1. Adicionar a lógica para exibir a pergunta e opções.
+        // 2. Criar a verificação de respostas.
+        // 3. Implementar o cálculo da pontuação.
+        // 4. Garantir que a próxima pergunta seja exibida corretamente sem repetir.
+        // 5. Exibir a pontuação final no fim do quiz.
+
+    </script>
+</body>
+
+</html>

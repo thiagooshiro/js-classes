@@ -27,6 +27,7 @@
 
         let items = document.getElementsByClassName('item');
 
+        items[0].innerText = 'Banana'
 
         let button = document.getElementById('faz-algo');
 
@@ -38,7 +39,11 @@
             }
         }
 
-        button.addEventListener('click', action);
+        button.addEventListener('click', function () {
+            for (let element of items) {
+                element.innerText = 'Banana!!!'
+            }
+        });
         // Diferente do primeiro exemplo, aqui declaramos a função fora do escutador de eventos e "passamos" essa função como parâmetro. Atenção: nesse caso, é importante NÃO COLOCAR os parênteses na frente de action, somente informar qual função queremos que o addEventListener execute.
 
         // Nesse exemplo, a função action executará um laço de repetição "for", percorrendo a lista items e alterando o valor textual (innerText) de cada elemento da classe "item".

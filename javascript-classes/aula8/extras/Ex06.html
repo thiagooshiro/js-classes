@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas Mágicas</title>
+    <style>
+        /* Estilos básicos */
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: lightgray;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Passe o mouse sobre as caixas mágicas</h1>
+
+    <!-- Container das caixas -->
+    <div class="container">
+        <!-- Primeira caixa -->
+        <div class="box" id="box1"></div>
+
+        <!-- Segunda caixa -->
+        <div class="box" id="box2"></div>
+
+        <!-- Terceira caixa -->
+        <div class="box" id="box3"></div>
+    </div>
+
+    <!-- Botão de reset -->
+    <button id="reset-btn">Resetar</button>
+
+    <script>
+        // Este exercício tem como objetivo praticar a manipulação de eventos de mouse e 
+        // a alteração de estilos dinâmicos de elementos. Você terá 3 caixas (divs) em uma 
+        // linha, e o comportamento delas muda quando o mouse passa sobre elas, cada caixa tem seu comportamento específico ao passar o mouse sobre ela. 
+        // Além disso, há um botão para restaurar o estado inicial.
+
+        // Passo a passo:
+        // 1. Ao passar o mouse sobre a primeira caixa, as caixas devem se empilhar.
+        // 2. Ao passar o mouse sobre a segunda caixa, ela deve desaparecer.
+        // 3. Ao passar o mouse sobre a terceira caixa, todas as caixas devem mudar para a cor dela.
+        // 4. O botão de reset deve restaurar o layout original das caixas e suas cores.
+
+        // Requisitos:
+        // - Use event listeners para capturar os eventos de mouse.
+        // - Manipule o estilo das caixas dinamicamente.
+        // - Garanta que o botão de reset funcione adequadamente.
+
+        // Estrutura básica do código:
+        // 1. Capturar os elementos da página.
+        // 2. Adicionar os eventos de mouse para cada caixa.
+        // 3. Adicionar a lógica para o botão de reset.
+
+    </script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
 // Considere a seguinte função:
 
 function mensagemDespedida() {
-    console.log("Muito obrigado por utilizar nossos serviços");
+    console.log("Muito obrigado por utilizar nossos serviços")
 }
 
 mensagemDespedida();

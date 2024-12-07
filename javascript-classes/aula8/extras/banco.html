@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - Saque e Depósito</title>
+</head>
+
+<body>
+    <h1>Banco - Saque e Depósito</h1>
+
+    <div id="transacoes">
+        <label for="valor">Digite o valor:</label>
+        <input type="number" id="valor" min="0" step="0.01" placeholder="Valor" />
+
+        <button id="depositar">Depositar</button>
+        <button id="sacar">Sacar</button>
+    </div>
+
+    <h2>Saldo Atual</h2>
+    <p id="saldo">R$ 0,00</p>
+
+    <script>
+        // Objetivo do exercício:
+        // Criar um sistema simples de saque e depósito bancário.
+        // O usuário deve ser capaz de inserir um valor e escolher entre sacar ou depositar esse valor.
+        // A cada transação, o saldo deve ser atualizado e o sistema não pode permitir que o saldo fique negativo.
+        
+        // Passos para implementar:
+        // 1. Capturar os botões "Depositar" e "Sacar".
+        // 2. Criar funções para realizar os depósitos e saques.
+        // 3. Atualizar o saldo exibido após cada transação.
+        // 4. Garantir que o saldo não fique negativo ao realizar o saque.
+        // 5. Teste o sistema utilizando diferentes valores para depósitos e saques.
+
+    </script>
+</body>
+
+</html>
