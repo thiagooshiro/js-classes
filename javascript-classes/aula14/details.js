@@ -8,9 +8,29 @@ async function buscarDetalhesReceita(id) {
 
    // Dica:
    // 1. Faça uma requisição `fetch` utilizando o endpoint API_URL_DETAILS e o ID da receita.
+   const rawData = await fetch(API_URL_DETAILS + id)
+   
+    
    // 2. Converta a resposta para JSON.
+   const data = await rawData.json()
+
    // 3. Utilize o objeto retornado para preencher os detalhes da receita na página.
+   console.log(data.meals[0])
+   const responsaFormatada = data.meals[0]
    // 4. Atualize o título da receita, a imagem e as instruções no DOM.
+
+   const tituloHMTL = document.getElementById('recipe-title')
+   tituloHMTL.innerText = responsaFormatada.strMeal
+
+   const imageHTML = document.getElementById('recipe-image')
+   
+   imageHTML.src = responsaFormatada.strMealThumb
+
+
+   const instructionsHTML = document.getElementById('recipe-instructions')
+
+   instructionsHTML.innerText = responsaFormatada.strInstructions
+
    // 5. Considere possíveis erros na requisição e trate-os utilizando um block Try Catch
    
    // Exemplo de como a URL pode ser estruturada:

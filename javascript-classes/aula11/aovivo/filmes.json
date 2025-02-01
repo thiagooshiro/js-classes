@@ -1,0 +1,203 @@
+[
+    {
+      "nome": "O Poderoso Chefão",
+      "categoria": "Drama/Crime",
+      "ano": 1972
+    },
+    {
+      "nome": "Star Wars: Uma Nova Esperança",
+      "categoria": "Ficção Científica/Aventura",
+      "ano": 1977
+    },
+    {
+      "nome": "Cidadão Kane",
+      "categoria": "Drama",
+      "ano": 1941
+    },
+    {
+      "nome": "Forrest Gump: O Contador de Histórias",
+      "categoria": "Drama/Romance",
+      "ano": 1994
+    },
+    {
+      "nome": "Clube da Luta",
+      "categoria": "Drama",
+      "ano": 1999
+    },
+    {
+      "nome": "Pulp Fiction: Tempo de Violência",
+      "categoria": "Crime/Drama",
+      "ano": 1994
+    },
+    {
+      "nome": "Matrix",
+      "categoria": "Ficção Científica/Ação",
+      "ano": 1999
+    },
+    {
+      "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+      "categoria": "Fantasia/Aventura",
+      "ano": 2001
+    },
+    {
+      "nome": "O Cavaleiro das Trevas",
+      "categoria": "Ação/Crime",
+      "ano": 2008
+    },
+    {
+      "nome": "A Origem",
+      "categoria": "Ficção Científica/Ação",
+      "ano": 2010
+    },
+    {
+      "nome": "Titanic",
+      "categoria": "Romance/Drama",
+      "ano": 1997
+    },
+    {
+      "nome": "Avatar",
+      "categoria": "Ficção Científica/Aventura",
+      "ano": 2009
+    },
+    {
+      "nome": "Vingadores: Ultimato",
+      "categoria": "Ação/Ficção Científica",
+      "ano": 2019
+    },
+    {
+      "nome": "Os Bons Companheiros",
+      "categoria": "Crime/Drama",
+      "ano": 1990
+    },
+    {
+      "nome": "Psicose",
+      "categoria": "Terror/Suspense",
+      "ano": 1960
+    },
+    {
+      "nome": "Gladiador",
+      "categoria": "Ação/Drama",
+      "ano": 2000
+    },
+    {
+      "nome": "O Silêncio dos Inocentes",
+      "categoria": "Suspense/Crime",
+      "ano": 1991 
+    },
+    {
+      "nome": "O Iluminado",
+      "categoria": "Terror/Suspense",
+      "ano": 1980
+    },
+    {
+      "nome": "A Vida é Bela",
+      "categoria": "Drama/Comédia",
+      "ano": 1997
+    },
+    {
+      "nome": "Interestelar",
+      "categoria": "Ficção Científica/Drama",
+      "ano": 2014
+    },
+    {
+      "nome": "Corra!",
+      "categoria": "Terror/Suspense",
+      "ano": 2017
+    },
+    {
+      "nome": "O Grande Lebowski",
+      "categoria": "Comédia/Crime",
+      "ano": 1998
+    },
+    {
+      "nome": "Jurassic Park: O Parque dos Dinossauros",
+      "categoria": "Aventura/Ficção Científica",
+      "ano": 1993
+    },
+    {
+      "nome": "E.T. - O Extraterrestre",
+      "categoria": "Ficção Científica/Família",
+      "ano": 1982
+    },
+    {
+      "nome": "Clube dos Cinco",
+      "categoria": "Drama/Comédia",
+      "ano": 1985
+    },
+    {
+      "nome": "Blade Runner: O Caçador de Andróides",
+      "categoria": "Ficção Científica",
+      "ano": 1982
+    },
+    {
+      "nome": "Mad Max: Estrada da Fúria",
+      "categoria": "Ação/Aventura",
+      "ano": 2015
+    },
+    {
+      "nome": "Coringa",
+      "categoria": "Drama/Crime",
+      "ano": 2019
+    },
+    {
+      "nome": "Django Livre",
+      "categoria": "Drama/Faroeste",
+      "ano": 2012
+    },
+    {
+      "nome": "Amnésia",
+      "categoria": "Suspense/Crime",
+      "ano": 2000
+    },
+    {
+      "nome": "Whiplash: Em Busca da Perfeição",
+      "categoria": "Drama/Música",
+      "ano": 2014
+    },
+    {
+      "nome": "A Lista de Schindler",
+      "categoria": "Drama/História",
+      "ano": 1993
+    },
+    {
+      "nome": "Os Sete Samurais",
+      "categoria": "Aventura/Drama",
+      "ano": 1954
+    },
+    {
+      "nome": "Laranja Mecânica",
+      "categoria": "Ficção Científica/Drama",
+      "ano": 1971
+    },
+    {
+      "nome": "Pantera Negra",
+      "categoria": "Ação/Aventura",
+      "ano": 2018
+    },
+    {
+      "nome": "A Noviça Rebelde",
+      "categoria": "Musical/Família",
+      "ano": 1965
+    },
+    {
+      "nome": "Casablanca",
+      "categoria": "Romance/Drama",
+      "ano": 1942
+    },
+    {
+      "nome": "Rocky: Um Lutador",
+      "categoria": "Drama/Esporte",
+      "ano": 1976
+    },
+    {
+      "nome": "O Rei Leão",
+      "categoria": "Animação/Aventura",
+      "ano": 1994
+    },
+    {
+      "nome": "Toy Story",
+      "categoria": "Animação/Família",
+      "ano": 1995
+    }
+  ]
+  

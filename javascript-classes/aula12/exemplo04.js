@@ -1,7 +1,8 @@
 async function carregarProdutos() {
     try {
+        url = './produtos.json'
         // Fazendo a requisição ao arquivo JSON e aguardando a resposta
-        const response = await fetch('produtos.json');
+        const response = await fetch(url);
 
         // Convertendo a resposta para JSON e aguardando a conversão
         const produtos = await response.json();

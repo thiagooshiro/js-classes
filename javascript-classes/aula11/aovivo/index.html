@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Filmes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Filmes</h1>
+  <label for="name-filter">Pesquise:</label>
+  <input id="name-filter" placeholder="Filtrar por nome" />
+  <ul id="filmes-lista">
+    <!-- Os filmes serão exibidos aqui -->
+  </ul>
+
+  <script>
+    // URL do arquivo JSON
+    const jsonUrl = './filmes.json';
+    let inputNames = document.getElementById('name-filter')
+
+
+    // Função para renderizar os filmes na tela
+    function renderizarFilmes(filmes) {
+      const listaElement = document.getElementById('filmes-lista');
+      listaElement.innerHTML = ''; // Limpa a lista antes de renderizar
+      filmes.forEach(filme => {
+        const item = document.createElement('li');
+        item.textContent = `${filme.nome} (${filme.ano}) - Categoria: ${filme.categoria}`;
+        listaElement.appendChild(item);
+      });
+    }
+
+
+
+    // Função para carregar os filmes
+    async function carregarFilmes() {
+        const resposta = await fetch(jsonUrl);
+        const listaFilmes = await resposta.json();
+      try {
+        console.log(listaFilmes)
+        renderizarFilmes(listaFilmes)
+      } catch (erro) {
+        console.error('Erro ao carregar os filmes:', erro);
+      }
+    }
+
+    async function filtrarPorNomes() {
+        let inputValue = inputNames.value.toLowerCase()  
+        const resposta = await fetch(jsonUrl);
+        const listaFilmes = await resposta.json(); 
+        
+            console.log('lista', listaFilmes)
+            let listaFiltrada = listaFilmes.filter((filme) => {
+                console.log(filme)
+                return filme.nome.toLowerCase().includes(inputValue)
+            })
+        renderizarFilmes(listaFiltrada)
+        }
+    
+
+
+
+    inputNames.addEventListener('input', filtrarPorNomes)
+    
+    // Carrega os filmes ao carregar a página
+    carregarFilmes();
+  </script>
+</body>
+</html>

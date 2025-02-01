@@ -1,3 +1,4 @@
+
 // Aqui temos uma string JSON que representa um produto
 const jsonString = '{"nome":"Smartphone","preco":1500,"estoque":100}';
 
@@ -12,3 +13,5 @@ console.log(produto.preco); // Saída: 1500
 console.log(produto['estoque']); // Saída: 100
 
 // Essa flexibilidade é útil para acessar chaves com nomes dinâmicos
+
+console.log(produto)

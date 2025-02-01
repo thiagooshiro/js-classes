@@ -12,7 +12,6 @@ async function carregarCategorias() {
         const response = await fetch(API_URL_CATEGORIES);
         const data = await response.json();
         const categorias = data.categories;
-
         console.log(data)
 
         categorias.forEach(categoria => {

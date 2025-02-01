@@ -1,0 +1,27 @@
+[
+    {
+        "name": "João Silva",
+        "email": "joao.silva@example.com",
+        "password": "senha123"
+    },
+    {
+        "name": "Maria Oliveira",
+        "email": "maria.oliveira@example.com",
+        "password": "maria2024"
+    },
+    {
+        "name": "Carlos Souza",
+        "email": "carlos.souza@example.com",
+        "password": "carlos321"
+    },
+    {
+        "name": "Ana Costa",
+        "email": "ana.costa@example.com",
+        "password": "ana@1234"
+    },
+    {
+        "name": "Lucas Pereira",
+        "email": "lucas.pereira@example.com",
+        "password": "lucas@2025"
+    }
+]
