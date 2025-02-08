@@ -1,7 +1,28 @@
 // login.js
 
+
+const teste = {
+    username: 'thiago@email.com',
+    password: '1234'
+}
+
+localStorage.setItem(`${teste.username}`, JSON.stringify(teste))
+
+const teste2 = {
+    username: 'amanda@email.com',
+    password: '1234'
+}
+
+localStorage.setItem('user', JSON.stringify(teste2))
+
+
+dados = JSON.parse(localStorage.getItem('user'))
+
+console.log(dados.username)
+
+
 // Função que é acionada quando o formulário é submetido
-document.getElementById('login-form').addEventListener('submit', function(e) {
+ function loginFormSubmit(e) {
     e.preventDefault(); // Impede o envio padrão do formulário
     
     // Pega os valores dos campos do formulário (e-mail, senha)
@@ -13,6 +34,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     feedback.textContent = '';
     feedback.style.color = '';
 
+    
     // **1. Verificação de e-mail e senha**
     // Validar se o e-mail e a senha fornecidos existem e estão corretos
     // A verificação pode ser feita com base nos dados salvos anteriormente no localStorage ou arquivo JSON
@@ -28,4 +50,6 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     // **4. Prevenção de envio**
     // Caso haja algum erro de validação (e-mail ou senha errados), o formulário não será enviado
     // E a mensagem de erro será exibida
-});
+ };
+
+document.getElementById('login-form').addEventListener('submit', loginFormSubmit)
