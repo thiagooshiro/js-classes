@@ -7,8 +7,23 @@
 
 
 // Exercício 1: Escreva um programa que recebe dois números como entrada e imprime o maior deles.
+let n1 = 8
+let n2 = 9
 
-// Exercício 2: Crie um programa que verifica se um número dado é par ou ímpar e imprime o resultado.
+if (n1 > n2) {
+    console.log(n1)
+} else {
+    console.log(n2)
+}
+
+// Exercício 2: Crie um programa que verifica se um número dado é par ou ímpar e imprime o resultado;
+
+let numero = 101
+if (numero % 2 === 0) {
+    console.log('Esse número é par')
+} else {
+    console.log('Esse número é ímpar')
+}
 
 // Exercício 3: Escreva um programa que solicita a idade do usuário e determina se ele é elegível para votar (16 anos ou mais).
 

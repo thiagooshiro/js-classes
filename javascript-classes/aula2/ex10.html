@@ -22,11 +22,15 @@
 
     <script>
         function action() {
+            // Calcule a média das notas do aluno e verifique se o estudante passou de ano.
+            // O aluno deve passar de ano se a média das suas 4 notas for superior a 7.
+            // Se a média for igual ou superior a 7, o aluno é aprovado.
+            // Caso contrário, o aluno é reprovado.
             let primeira = parseFloat(document.getElementById('primeira').value)      // Captura o valor do input quando o botão é clicado
             let segunda = parseFloat(document.getElementById('segunda').value)      // Captura o valor do input quando o botão é clicado
             let terceira = parseFloat(document.getElementById('terceira').value)      // Captura o valor do input quando o botão é clicado
             let quarta = parseFloat(document.getElementById('quarta').value)     // Captura o valor do input quando o botão é clicado           
-            resultado = ''
+            let resultado = ''
             //Escreva aqui o programa de vocês:
             
             

@@ -19,7 +19,13 @@
             // Exercício 0 - Peça ao usuário para digitar o nome no input, se esse valor for válido, esse valor deve ser impresso no paragrafo de id "resultado", caso contrário,exibir uma mensagem de erro.
             let msg = document.getElementById('entrada').value      // Captura o valor do input quando o botão é clicado
             let paragraph = document.getElementById('resultado')
-            // Escreva aqui sua lógica;
+            console.log(paragraph)
+            if (!msg) {
+                alert('Cê esqueceu de digitar seu nome, trem')
+            } else { 
+                console.log(msg)
+                paragraph.innerText = msg   // Altera o elemento HTML com id correspondente adicionando o texto     
+            }
         }
 
         
