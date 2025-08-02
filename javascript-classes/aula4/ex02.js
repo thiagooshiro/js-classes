@@ -1,26 +1,17 @@
-// 2 - Crie um algoritmo que lê uma lista de palavras e inverte as palavras, sem alterar a ordem da lista original. 
-// Ex: lista = ['Mariana', 'Luiz', 'João', 'Amanda']
-// output esperado: ['Anairam', 'Ziul', 'Oãoj', 'Adnama']
+// 2 - Crie um algoritmo que lê uma palavra e imprime as letras separadamente e cada letra em caixa alta (maiúscula)
 
-let lista = ['Mariana', 'Luiz', 'João', 'Amanda']
+let palavra = 'Rodrigo'
 
-// Sei que vou precisar iterar sobre a lista de nomes.
+let nomezao = ''
 
-let nova_lista = []
+for(let i = 0; i < palavra.length; i += 1) {
+    nomezao = nomezao + palavra[i].toUpperCase()
+    // console.log(palavra[i].toUpperCase())
+}
+console.log(nomezao)
 
-for (let nome of lista) {
-    // escrever o nome ao contrário
-    // Strings se comportam como listas.
-    let palavra = ''
-    for (let i = nome.length - 1; i >= 0; i-=1) {
-        // console.log(nome[i])
-        if (palavra === '') {
-            palavra = palavra + nome[i].toUpperCase()
-        } else {
-            palavra = palavra + nome[i].toLowerCase()
-        }
-    }
-    nova_lista.push(palavra)
+let nome = 'Bruno'
+for(let letra of nome) {
+    console.log(letra)
 }
 
-console.log(nova_lista)

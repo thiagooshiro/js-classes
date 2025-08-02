@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de For com Input</title>
+  <style>
+    #resultado {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Digite o valor alvo</h2>
+  
+  <!-- Input para o valor de alvo -->
+  <input type="number" id="alvo" placeholder="Digite um número" />
+
+  <!-- Botão que vai acionar o loop -->
+  <button id="btnMaravilha">Maravilha!!!</button>
+  
+  <!-- Onde vamos exibir os resultados -->
+  <div id="resultado"></div>
+
+  <script>
+    // Função que será chamada quando o botão for clicado
+    document.getElementById('btnMaravilha').addEventListener('click', function() {
+      // Pega o valor do input
+      let alvo = document.getElementById('alvo').value;
+      alvo = parseInt(alvo); // Garante que seja um número inteiro
+      
+      // Limpa a área de resultados antes de rodar o for
+      document.getElementById('resultado').innerHTML = '';
+
+      // Roda o loop e mostra os valores na tela
+      for (let i = 1; i <= alvo; i++) {
+        // Adiciona cada número ao conteúdo do div "resultado"
+        document.getElementById('resultado').innerHTML += i + '<br>';
+      }
+    });
+  </script>
+
+</body>
+</html>

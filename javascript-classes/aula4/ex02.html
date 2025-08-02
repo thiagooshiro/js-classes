@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Letras Maiúsculas Separadas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #resultado {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Digite uma palavra</h1>
+  <input type="text" id="inputPalavra" placeholder="Digite aqui" />
+  <button onclick="mostrarLetras()">Mostrar Letras</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function mostrarLetras() {
+      const palavra = document.getElementById('inputPalavra').value;
+      const resultadoDiv = document.getElementById('resultado');
+
+      resultadoDiv.innerHTML = ''; // Limpa o resultado anterior
+
+      for (let i = 0; i < palavra.length; i++) {
+        const letraMaiuscula = palavra[i].toUpperCase();
+        const p = document.createElement('p');
+        p.textContent = letraMaiuscula;
+        resultadoDiv.appendChild(p);
+      }
+    }
+  </script>
+</body>
+</html>
