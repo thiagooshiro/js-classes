@@ -3,9 +3,20 @@
 // output esperado: ['Anairam', 'Ziul', 'Oãoj', 'Adnama']
 const lista = ["Mariana", "Luiz", "João", "Amanda"];
 
-for (nome in lista) {
+for (nome of lista) {
     let palavra = ''
-    for (caracter in nome) {
+    for (let caracter of nome) {
+        if (palavra.length === 0) {
+            caracter = caracter.toLowerCase()
+        }
+        
+        if (palavra.length == nome.length - 1) {
+            caracter = caracter.toUpperCase()
+        }
         palavra = caracter + palavra
+        
+
+        
     }
+    console.log(palavra)
 }
