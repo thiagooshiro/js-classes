@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Investigação do Detetive Confúcio</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  h1 { margin-bottom: 10px; }
+  form p { margin: 5px 0; }
+  .resultado { margin-top: 20px; font-weight: bold; font-size: 1.2em; }
+  .suspeita { color: orange; }
+  .cumpl { color: blue; }
+  .assassino { color: red; }
+  .inocente { color: green; }
+</style>
+</head>
+<body>
+  <h1>Interrogatório do Detetive Confúcio</h1>
+  
+  <form id="formCrime">
+    <p>1. Telefonou para a vítima? 
+      <select id="q1">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </p>
+    <p>2. Esteve no local do crime?
+      <select id="q2">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </p>
+    <p>3. Mora próximo do local do crime?
+      <select id="q3">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </p>
+    <p>4. Devia favores/dinheiro à vítima?
+      <select id="q4">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </p>
+    <p>5. Já trabalhou com a vítima?
+      <select id="q5">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </p>
+    <button type="submit">Verificar</button>
+  </form>
+
+  <div id="resultado" class="resultado"></div>
+
+<script>
+// ======== CAPTURA DE ELEMENTOS DO DOM ========
+const formCrime = document.getElementById('formCrime');
+const resultadoDiv = document.getElementById('resultado');
+
+// ======== EVENTO DO FORM ========
+formCrime.addEventListener('submit', function(e) {
+  e.preventDefault();
+  verificar();
+});
+
+// ======== FUNÇÃO PARA O ALUNO IMPLEMENTAR ========
+function verificar() {
+    const resposta1 = document.getElementById('q1').value;
+    const resposta2 = document.getElementById('q2').value;
+    const resposta3 = document.getElementById('q3').value;
+    const resposta4 = document.getElementById('q4').value;
+    const resposta5 = document.getElementById('q5').value;
+
+  // Aqui o aluno acessa as respostas com:
+  // resposta1.value, resposta2.value, etc.
+  
+  // Passos que o aluno deve seguir:
+  // 1. Contar quantos "sim" existem
+  // 2. Usar condições para classificar
+  // 3. Atribua à variável "classificação" o resultado da sua lógica;
+
+
+  let classificacao = "";
+
+  resultadoDiv.textContent = classificacao;
+  resultadoDiv.className = "resultado";
+
+  if (classificacao === "Suspeita") {
+    resultadoDiv.classList.add("suspeita");
+  } else if (classificacao === "Cúmplice") {
+    resultadoDiv.classList.add("cumpl");
+  } else if (classificacao === "Assassino") {
+    resultadoDiv.classList.add("assassino");
+  } else if (classificacao === "Inocente") {
+    resultadoDiv.classList.add("inocente");
+  }
+}
+</script>
+</body>
+</html>
